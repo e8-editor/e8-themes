@@ -1,0 +1,6 @@
+{
+  "name": "e8-themes",
+  "description": "Themes for E8, Modus, Nord, Leuven and Wombat among them, and e8-themes-select to choose one, seeing each",
+  "e8": "0.5.0",
+  "requires": {}
+}
