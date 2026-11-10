@@ -293,14 +293,15 @@ const SAMPLE_LINES: [string, e8.Value?][][] = [
   [[" 14 ", "line-number"], [" "], ["Find file: ", "minibuffer-prompt"], ["~/proj/"], ["e8", "completions-common-part"], ["-themes/"]],
 ];
 
-/** Who made theme T and where it comes from, for the sample's head: a line or two. */
+/** Who made theme T, where it comes from and how readable it is, for the sample's head: a few short lines. */
 export function credit(t: ThemeInfo): string[] {
   const src = t.source;
   if (!src) return [t.collection === "Yours" ? "A theme of your own, along load-path." : ""];
   const by = src.authors.length ? `By ${src.authors.join(", ")}` : "";
   const after = src.original ? `, after ${src.original.replace(/^https?:\/\/(www\.)?/, "")}` : "";
-  const contrast = t.contrast ? `   Contrast ${t.contrast.text}:1 text, ${t.contrast.code}:1 code, ${t.contrast.comments}:1 comments` : "";
-  return [`${by}${after}.`, `From ${src.package} ${src.version} at ${src.commit.slice(0, 7)}, ${src.licence}.${contrast}`];
+  const lines = [`${by}${after}.`, `From ${src.package} ${src.version} at ${src.commit.slice(0, 7)}, ${src.licence}.`];
+  if (t.contrast) lines.push(`Contrast ${t.contrast.text}:1 text, ${t.contrast.code}:1 code, ${t.contrast.comments}:1 comments.`);
+  return lines;
 }
 
 /** Writes the sample for theme T, or for the themes enabled when there is none. */
