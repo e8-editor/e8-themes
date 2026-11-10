@@ -1,0 +1,3612 @@
+[
+  {
+    "theme": "adwaita",
+    "collection": "Emacs",
+    "package": "GNU Emacs",
+    "repository": "https://github.com/emacs-mirror/emacs",
+    "commit": "a360712c9d272d950d8d8255ef74570f7e90b7d9",
+    "describe": "emacs-31.1",
+    "version": "31.1",
+    "file": "etc/themes/adwaita-theme.el",
+    "blob": "c55ae8041d7b15e424498575bdc1e3d3d0c4dd5e",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "William Stevenson"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2010-2026 Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "catppuccin-frappe",
+    "collection": "Catppuccin",
+    "package": "catppuccin-theme",
+    "repository": "https://github.com/catppuccin/emacs",
+    "commit": "56c3cbe1fee8b04dd7331738df1a0b9bdc6f71bd",
+    "describe": "V0.2.0-alpha-200-g56c3cbe",
+    "version": "1.0.0",
+    "file": "catppuccin-theme.el",
+    "blob": "17841919c87ea689986a1e08348a525c4e368b37",
+    "licence": "MIT",
+    "authors": [
+      "nyxkrage"
+    ],
+    "maintainers": [
+      "Jeremy Baxter"
+    ],
+    "copyright": [
+      "Copyright 2022-present Catppuccin, All rights reserved"
+    ],
+    "original": null
+  },
+  {
+    "theme": "catppuccin-latte",
+    "collection": "Catppuccin",
+    "package": "catppuccin-theme",
+    "repository": "https://github.com/catppuccin/emacs",
+    "commit": "56c3cbe1fee8b04dd7331738df1a0b9bdc6f71bd",
+    "describe": "V0.2.0-alpha-200-g56c3cbe",
+    "version": "1.0.0",
+    "file": "catppuccin-theme.el",
+    "blob": "17841919c87ea689986a1e08348a525c4e368b37",
+    "licence": "MIT",
+    "authors": [
+      "nyxkrage"
+    ],
+    "maintainers": [
+      "Jeremy Baxter"
+    ],
+    "copyright": [
+      "Copyright 2022-present Catppuccin, All rights reserved"
+    ],
+    "original": null
+  },
+  {
+    "theme": "catppuccin-macchiato",
+    "collection": "Catppuccin",
+    "package": "catppuccin-theme",
+    "repository": "https://github.com/catppuccin/emacs",
+    "commit": "56c3cbe1fee8b04dd7331738df1a0b9bdc6f71bd",
+    "describe": "V0.2.0-alpha-200-g56c3cbe",
+    "version": "1.0.0",
+    "file": "catppuccin-theme.el",
+    "blob": "17841919c87ea689986a1e08348a525c4e368b37",
+    "licence": "MIT",
+    "authors": [
+      "nyxkrage"
+    ],
+    "maintainers": [
+      "Jeremy Baxter"
+    ],
+    "copyright": [
+      "Copyright 2022-present Catppuccin, All rights reserved"
+    ],
+    "original": null
+  },
+  {
+    "theme": "catppuccin-mocha",
+    "collection": "Catppuccin",
+    "package": "catppuccin-theme",
+    "repository": "https://github.com/catppuccin/emacs",
+    "commit": "56c3cbe1fee8b04dd7331738df1a0b9bdc6f71bd",
+    "describe": "V0.2.0-alpha-200-g56c3cbe",
+    "version": "1.0.0",
+    "file": "catppuccin-theme.el",
+    "blob": "17841919c87ea689986a1e08348a525c4e368b37",
+    "licence": "MIT",
+    "authors": [
+      "nyxkrage"
+    ],
+    "maintainers": [
+      "Jeremy Baxter"
+    ],
+    "copyright": [
+      "Copyright 2022-present Catppuccin, All rights reserved"
+    ],
+    "original": null
+  },
+  {
+    "theme": "deeper-blue",
+    "collection": "Emacs",
+    "package": "GNU Emacs",
+    "repository": "https://github.com/emacs-mirror/emacs",
+    "commit": "a360712c9d272d950d8d8255ef74570f7e90b7d9",
+    "describe": "emacs-31.1",
+    "version": "31.1",
+    "file": "etc/themes/deeper-blue-theme.el",
+    "blob": "ea70b6f9349d530d0fe9a5a63d46ce91fa3d027a",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Scott Frazer"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2011-2026 Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "dichromacy",
+    "collection": "Emacs",
+    "package": "GNU Emacs",
+    "repository": "https://github.com/emacs-mirror/emacs",
+    "commit": "a360712c9d272d950d8d8255ef74570f7e90b7d9",
+    "describe": "emacs-31.1",
+    "version": "31.1",
+    "file": "etc/themes/dichromacy-theme.el",
+    "blob": "849d692645751e1cea55e2a5933f1fc8da49bb13",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Chong Yidong"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2011-2026 Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "doom-1337",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-1337-theme.el",
+    "blob": "67654cd98494e0e0a282b3f94ebe3167399e6dc6",
+    "licence": "MIT",
+    "authors": [
+      "ccmywish"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/microsoft/vscode-themes/tree/main/1337"
+  },
+  {
+    "theme": "doom-Iosvkem",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-Iosvkem-theme.el",
+    "blob": "f1d633dd8b13f6de46e85da5de1f02f3d11d3f9f",
+    "licence": "MIT",
+    "authors": [
+      "neutaaaaan"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/neutaaaaan/iosvkem"
+  },
+  {
+    "theme": "doom-acario-dark",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-acario-dark-theme.el",
+    "blob": "0d089165210b8c149561c6fcde095fdffbffec71",
+    "licence": "MIT",
+    "authors": [
+      "gagbo"
+    ],
+    "maintainers": [
+      "gagbo"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": null
+  },
+  {
+    "theme": "doom-acario-light",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-acario-light-theme.el",
+    "blob": "827fbe7d13959e0f6115a620b721012def82a610",
+    "licence": "MIT",
+    "authors": [
+      "gagbo"
+    ],
+    "maintainers": [
+      "gagbo"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": null
+  },
+  {
+    "theme": "doom-ayu-mirage",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-ayu-mirage-theme.el",
+    "blob": "212cd32011c657b90a4c9f884b4d815c9cf20f52",
+    "licence": "MIT",
+    "authors": [
+      "LoveSponge"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/dempfi/ayu"
+  },
+  {
+    "theme": "doom-badger",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-badger-theme.el",
+    "blob": "5b462a722fd151e9a66e4a599b4cff6d3fd07a89",
+    "licence": "MIT",
+    "authors": [
+      "jsoa"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/ccann/badger-theme/"
+  },
+  {
+    "theme": "doom-bluloco-dark",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-bluloco-dark-theme.el",
+    "blob": "cdeef498e732f89e2be70ec4674b73be18798042",
+    "licence": "MIT",
+    "authors": [
+      "RazikSF"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/uloco/theme-bluloco-dark"
+  },
+  {
+    "theme": "doom-bluloco-light",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-bluloco-light-theme.el",
+    "blob": "ffdcd2270ca902a289fb32f0989e0f49569ae7db",
+    "licence": "MIT",
+    "authors": [
+      "RazikSF"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/uloco/theme-bluloco-light"
+  },
+  {
+    "theme": "doom-challenger-deep",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-challenger-deep-theme.el",
+    "blob": "18134ff5f5f6c03a66318bc94288e828d42a5cd4",
+    "licence": "MIT",
+    "authors": [
+      "fuxialexander"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/challenger-deep-theme/vim"
+  },
+  {
+    "theme": "doom-city-lights",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-city-lights-theme.el",
+    "blob": "3976d118e219760afab765d8f5820bf5e3c73fd4",
+    "licence": "MIT",
+    "authors": [
+      "fuxialexander"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://citylights.xyz"
+  },
+  {
+    "theme": "doom-dark+",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-dark+-theme.el",
+    "blob": "00c70f2c7038d1a3db784c13635a1239c5bbd9b9",
+    "licence": "MIT",
+    "authors": [
+      "ema2159"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": null
+  },
+  {
+    "theme": "doom-earl-grey",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-earl-grey-theme.el",
+    "blob": "d7e6d8158b80147260b51ca507d7f1db6cedd486",
+    "licence": "MIT",
+    "authors": [
+      "JuneKelly"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": null
+  },
+  {
+    "theme": "doom-ephemeral",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-ephemeral-theme.el",
+    "blob": "e96f031583a1b0732bcec9a57263c3737308850d",
+    "licence": "MIT",
+    "authors": [
+      "karetsu"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/elenapan/dotfiles"
+  },
+  {
+    "theme": "doom-fairy-floss",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-fairy-floss-theme.el",
+    "blob": "7cf0947d7c609f3e77e64efb0f5716591c9635e1",
+    "licence": "MIT",
+    "authors": [
+      "ema2159"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/sailorhg/fairyfloss"
+  },
+  {
+    "theme": "doom-feather-light",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-feather-light-theme.el",
+    "blob": "f9060c33b24e9f919a75e83bca93f85df7662235",
+    "licence": "MIT",
+    "authors": [
+      "Lena SAVY-LARIGALDIE"
+    ],
+    "maintainers": [
+      "Lena SAVY-LARIGALDIE"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/Plunne/doom-feather-theme"
+  },
+  {
+    "theme": "doom-flatwhite",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-flatwhite-theme.el",
+    "blob": "600bd721e98bfa81400ec42a6556bbb67da448f8",
+    "licence": "MIT",
+    "authors": [
+      "JuneKelly"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/biletskyy/flatwhite-syntax"
+  },
+  {
+    "theme": "doom-henna",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-henna-theme.el",
+    "blob": "40d6c26a66796b4c88bb7cfdb0e2fe1082d92e40",
+    "licence": "MIT",
+    "authors": [
+      "jsoa"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/httpsterio/vscode-henna"
+  },
+  {
+    "theme": "doom-homage-black",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-homage-black-theme.el",
+    "blob": "fa194d32c3b9fecbfea297dfd6787d8ffe22105a",
+    "licence": "MIT",
+    "authors": [
+      "mskorzhinskiy"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": null
+  },
+  {
+    "theme": "doom-homage-white",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-homage-white-theme.el",
+    "blob": "51fbe379749e44bb4d00af3edc40c750f64fe7aa",
+    "licence": "MIT",
+    "authors": [
+      "mskorzhinskiy"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": null
+  },
+  {
+    "theme": "doom-horizon",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-horizon-theme.el",
+    "blob": "a96d21ef9adba9822265057f58cbcf1706e10a10",
+    "licence": "MIT",
+    "authors": [
+      "karetsu"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/aodhneine/horizon-theme.el"
+  },
+  {
+    "theme": "doom-ir-black",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-ir-black-theme.el",
+    "blob": "1096f175e1281ad6c44853289337ae2c9c804575",
+    "licence": "MIT",
+    "authors": [
+      "Kevin Kainan Li"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/twerth/ir_black"
+  },
+  {
+    "theme": "doom-lantern",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-lantern-theme.el",
+    "blob": "4475b1b718c20f75f3066d6a495f7f3ec24f32c8",
+    "licence": "MIT",
+    "authors": [
+      "paladhammika"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/Gitleptune/lantern-theme"
+  },
+  {
+    "theme": "doom-laserwave",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-laserwave-theme.el",
+    "blob": "4a8e30980fd5bfe70c2a02bace221e735c49b04b",
+    "licence": "MIT",
+    "authors": [
+      "hyakt"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/Jaredk3nt/laserwave"
+  },
+  {
+    "theme": "doom-manegarm",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-manegarm-theme.el",
+    "blob": "02c4c09125b8997b53164907cbb52e6bc960c136",
+    "licence": "MIT",
+    "authors": [
+      "kenranunderscore"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": null
+  },
+  {
+    "theme": "doom-material",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-material-theme.el",
+    "blob": "e5640206ba245adf7b519ca3c386642b64f3138a",
+    "licence": "MIT",
+    "authors": [
+      "tam5"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/equinusocio/vsc-material-theme"
+  },
+  {
+    "theme": "doom-material-dark",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-material-dark-theme.el",
+    "blob": "bbf4d2ca45a9bf8d01e7a474a282a50a3742c576",
+    "licence": "MIT",
+    "authors": [
+      "trev-dev"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/xrei/material-dark-vscode"
+  },
+  {
+    "theme": "doom-meltbus",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-meltbus-theme.el",
+    "blob": "f7d077007ad9320367feae6cf02d09390132a4fe",
+    "licence": "MIT",
+    "authors": [
+      "spacefrogg"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/equinusocio/vsc-material-theme"
+  },
+  {
+    "theme": "doom-miramare",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-miramare-theme.el",
+    "blob": "d9dfa95a6224ebcdceee4b7814c3d045de37948f",
+    "licence": "MIT",
+    "authors": [
+      "sagittaros"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/franbach/miramare"
+  },
+  {
+    "theme": "doom-molokai",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-molokai-theme.el",
+    "blob": "62b2e6c573bfd320fe05e1a0534e93339f87a55e",
+    "licence": "MIT",
+    "authors": [
+      "Henrik Lissner"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/tomasr/molokai"
+  },
+  {
+    "theme": "doom-monokai-classic",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-monokai-classic-theme.el",
+    "blob": "b6af34a923f0227687c87d6f07ddd81667b3ad0a",
+    "licence": "MIT",
+    "authors": [
+      "ema2159"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://monokai.pro"
+  },
+  {
+    "theme": "doom-monokai-machine",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-monokai-machine-theme.el",
+    "blob": "1a3c0fb272277e6d0a31ecf4776af64834a335e3",
+    "licence": "MIT",
+    "authors": [
+      "minikN"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://monokai.pro"
+  },
+  {
+    "theme": "doom-monokai-octagon",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-monokai-octagon-theme.el",
+    "blob": "7e71d771ca3aa296d688755e916a36497c19fdeb",
+    "licence": "MIT",
+    "authors": [
+      "minikN"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://monokai.pro"
+  },
+  {
+    "theme": "doom-monokai-pro",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-monokai-pro-theme.el",
+    "blob": "b49f46c5e18079a005d69b8e1d0e3975def47aa7",
+    "licence": "MIT",
+    "authors": [
+      "minikN"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://monokai.pro"
+  },
+  {
+    "theme": "doom-monokai-ristretto",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-monokai-ristretto-theme.el",
+    "blob": "3b35ea8cad7ebad0d39cbfc7f3ea2e0122293424",
+    "licence": "MIT",
+    "authors": [
+      "minikN"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://monokai.pro"
+  },
+  {
+    "theme": "doom-monokai-spectrum",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-monokai-spectrum-theme.el",
+    "blob": "d6fac8097738c2f2a79bf4f258a144fc5d7cd1d3",
+    "licence": "MIT",
+    "authors": [
+      "minikN"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://monokai.pro"
+  },
+  {
+    "theme": "doom-moonlight",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-moonlight-theme.el",
+    "blob": "8e642cbadb222ef7b4eb8efa79c96aaf2dcdfa41",
+    "licence": "MIT",
+    "authors": [
+      "Brettm12345"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/atomiks/moonlight-vscode-theme"
+  },
+  {
+    "theme": "doom-nord-aurora",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-nord-aurora-theme.el",
+    "blob": "c8b263a1b0c2ca6986e996372983edeab37a87ca",
+    "licence": "MIT",
+    "authors": [
+      "MoskitoHero"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://www.nordtheme.com"
+  },
+  {
+    "theme": "doom-nord-light",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-nord-light-theme.el",
+    "blob": "fe08270ff90511eaeb65d7ac17cf51b8915418b3",
+    "licence": "MIT",
+    "authors": [
+      "fuxialexander"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/arcticicestudio/nord"
+  },
+  {
+    "theme": "doom-nova",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-nova-theme.el",
+    "blob": "808628dca32e4e0a1c9b173e0523930b59d35e3d",
+    "licence": "MIT",
+    "authors": [
+      "bigardone"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/trevordmiller/nova-colors"
+  },
+  {
+    "theme": "doom-oceanic-next",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-oceanic-next-theme.el",
+    "blob": "f2f290747b931e107cccedb3d99ea81be9a83ebd",
+    "licence": "MIT",
+    "authors": [
+      "juanwolf"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/voronianski/oceanic-next-color-scheme"
+  },
+  {
+    "theme": "doom-oksolar-dark",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-oksolar-dark-theme.el",
+    "blob": "06d307227c1dcd7cb20c7300c6eb675d072ef166",
+    "licence": "MIT",
+    "authors": [
+      "logc"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://meat.io/oksolar.json"
+  },
+  {
+    "theme": "doom-oksolar-light",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-oksolar-light-theme.el",
+    "blob": "e7377e0ca2933369a7f5b762d3af0aab42f42daa",
+    "licence": "MIT",
+    "authors": [
+      "logc"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://meat.io/oksolar.json"
+  },
+  {
+    "theme": "doom-old-hope",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-old-hope-theme.el",
+    "blob": "b9c394b58ce81e47814ac83255c6d6c3b394b817",
+    "licence": "MIT",
+    "authors": [
+      "teesloane"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/jesseleite/an-old-hope-syntax-atom"
+  },
+  {
+    "theme": "doom-one",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-one-theme.el",
+    "blob": "1a87bab4c30796301b22a26fab5bcffb1d084093",
+    "licence": "MIT",
+    "authors": [
+      "Henrik Lissner"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/atom/one-dark-ui"
+  },
+  {
+    "theme": "doom-one-light",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-one-light-theme.el",
+    "blob": "323af7b858ccbe4e499e792f6bfd74d90b1263bb",
+    "licence": "MIT",
+    "authors": [
+      "ztlevi"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/atom/one-light-ui"
+  },
+  {
+    "theme": "doom-opera",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-opera-theme.el",
+    "blob": "8414eebba8fca4265ca0caf3ee4410f09512562a",
+    "licence": "MIT",
+    "authors": [
+      "jwintz"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": null
+  },
+  {
+    "theme": "doom-opera-light",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-opera-light-theme.el",
+    "blob": "62c3b1a1abcddb6d34ecca24a3b8b24026f333cf",
+    "licence": "MIT",
+    "authors": [
+      "jwintz"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": null
+  },
+  {
+    "theme": "doom-outrun-electric",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-outrun-electric-theme.el",
+    "blob": "d2cabc5cf4c4a1ca718dae93f82c783c8eb55281",
+    "licence": "MIT",
+    "authors": [
+      "ema2159"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/samrap/outrun-theme-vscode"
+  },
+  {
+    "theme": "doom-palenight",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-palenight-theme.el",
+    "blob": "2c52eb8295d4ea31b3abc5db60531da66a4dc51b",
+    "licence": "MIT",
+    "authors": [
+      "Brettm12345"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/material-theme/vsc-material-theme"
+  },
+  {
+    "theme": "doom-peacock",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-peacock-theme.el",
+    "blob": "253f91870bb061f5993fe3b828cf2cd27049601d",
+    "licence": "MIT",
+    "authors": [
+      "teesloane"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/daylerees/colour-schemes/blob/master/emacs/peacock-theme.el"
+  },
+  {
+    "theme": "doom-pine",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-pine-theme.el",
+    "blob": "a5ee040b80b10a4ac2e017b51d1c4adf345277ae",
+    "licence": "MIT",
+    "authors": [
+      "Roman Hargrave"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": null
+  },
+  {
+    "theme": "doom-plain-dark",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-plain-dark-theme.el",
+    "blob": "382c9bb82873054678adf141c51ab9ca37e93d2b",
+    "licence": "MIT",
+    "authors": [
+      "das-s"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/gko/plain/"
+  },
+  {
+    "theme": "doom-rouge",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-rouge-theme.el",
+    "blob": "71101ec119d9d94a76b454213d1792ac4481079f",
+    "licence": "MIT",
+    "authors": [
+      "das-s"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/josefaidt/rouge-theme"
+  },
+  {
+    "theme": "doom-shades-of-purple",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-shades-of-purple-theme.el",
+    "blob": "4ef3729480669f94ac8e0a85857d46d0ff57ac2e",
+    "licence": "MIT",
+    "authors": [
+      "jwbaldwin"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/jwbaldwin/spacemacs-shades-of-purple"
+  },
+  {
+    "theme": "doom-snazzy",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-snazzy-theme.el",
+    "blob": "e8849747d1aaa2de3b3e9132340099a6b44e665b",
+    "licence": "MIT",
+    "authors": [
+      "ar1a"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/sindresorhus/hyper-snazzy"
+  },
+  {
+    "theme": "doom-sourcerer",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-sourcerer-theme.el",
+    "blob": "d16b52800042dcde032dc18120ae0554e4a697c2",
+    "licence": "MIT",
+    "authors": [
+      "fm0xb"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/xero/sourcerer"
+  },
+  {
+    "theme": "doom-spacegrey",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-spacegrey-theme.el",
+    "blob": "f0d4d6460aa6a52789f888261f5b54a92358756d",
+    "licence": "MIT",
+    "authors": [
+      "teesloane"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "http://kkga.github.io/spacegray/"
+  },
+  {
+    "theme": "doom-tokyo-night",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-tokyo-night-theme.el",
+    "blob": "551ae78e09a1ae85c2e6603ab6486aa17a0ce408",
+    "licence": "MIT",
+    "authors": [
+      "FosterHangdaan"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/enkia/tokyo-night-vscode-theme"
+  },
+  {
+    "theme": "doom-vibrant",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-vibrant-theme.el",
+    "blob": "908bcf66da517dc495d13e27cea252edd4c43e30",
+    "licence": "MIT",
+    "authors": [
+      "Henrik Lissner"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": null
+  },
+  {
+    "theme": "doom-wilmersdorf",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-wilmersdorf-theme.el",
+    "blob": "a36ae23007b1959541db1b3601fc88390dcc48d3",
+    "licence": "MIT",
+    "authors": [
+      "ema2159"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/ianpan870102/wilmersdorf-emacs-theme"
+  },
+  {
+    "theme": "doom-winter-is-coming-dark-blue",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-winter-is-coming-dark-blue-theme.el",
+    "blob": "afb568bbae505a893c3a7e8b8196f949877c5046",
+    "licence": "MIT",
+    "authors": [
+      "Philip Arvidsson"
+    ],
+    "maintainers": [
+      "Philip Arvidsson"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/johnpapa/vscode-winteriscoming"
+  },
+  {
+    "theme": "doom-winter-is-coming-light",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-winter-is-coming-light-theme.el",
+    "blob": "05a18f3b2265979d8ac17cfad3874dc2a399f395",
+    "licence": "MIT",
+    "authors": [
+      "Philip Arvidsson"
+    ],
+    "maintainers": [
+      "Philip Arvidsson"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": "https://github.com/johnpapa/vscode-winteriscoming"
+  },
+  {
+    "theme": "doom-xcode",
+    "collection": "Doom",
+    "package": "doom-themes",
+    "repository": "https://github.com/doomemacs/themes",
+    "commit": "a59202912ad55014e53a685eee6cd94130bdd4fd",
+    "describe": "v2.3.0-138-ga592029",
+    "version": "2.3.0",
+    "file": "themes/doom-xcode-theme.el",
+    "blob": "8d0511acfbb63df121c90f01fde3c505c39ccb56",
+    "licence": "MIT",
+    "authors": [
+      "kadenbarlow"
+    ],
+    "maintainers": [
+      "Henrik Lissner"
+    ],
+    "copyright": [
+      "Copyright (C) 2016-2024 Henrik Lissner"
+    ],
+    "original": null
+  },
+  {
+    "theme": "dracula",
+    "collection": "Dracula",
+    "package": "dracula-theme",
+    "repository": "https://github.com/dracula/emacs",
+    "commit": "538b8d20c667ac4b0c43ed1a5ef50760fb4ad754",
+    "describe": "v1.8.3-17-g538b8d2",
+    "version": "1.8.3",
+    "file": "dracula-theme.el",
+    "blob": "055e5d2163761105fa3ba034352bfef7b7d3c5d6",
+    "licence": "MIT",
+    "authors": [
+      "film42"
+    ],
+    "maintainers": [
+      "Étienne Deparis"
+    ],
+    "copyright": [
+      "Copyright 2015-present, All rights reserved"
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-arbutus",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-arbutus-theme.el",
+    "blob": "9cc04ad6f6cb9e805c882c4265feb1d361c19508",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-arcadia",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-arcadia-theme.el",
+    "blob": "aa3d6d0d9d91e014fb964d0b8b353f4ed89efb5f",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-atlantis",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-atlantis-theme.el",
+    "blob": "37928b91fc5ab1208960987a8cf4a324b6ffa2fe",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-autumn",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-autumn-theme.el",
+    "blob": "16a5862b3897d70297bcf75cafbe54129f1711b8",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-bio",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-bio-theme.el",
+    "blob": "f1436d67b280521ee66e5dda4e55eab5d7b97aa2",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-cherie",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-cherie-theme.el",
+    "blob": "98e98380c2f1f60e8e038ca54de6a75773b24607",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-cyprus",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-cyprus-theme.el",
+    "blob": "93a0acb8be6b5b93e16d70c9858f15b4d46bd3d3",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-dark",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-dark-theme.el",
+    "blob": "d06e697a27e9554e0d06ebbe87ee6542481ff300",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-day",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-day-theme.el",
+    "blob": "1f502cec1b02ccd4c4ccde8b48bc568d60bcd963",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-deuteranopia-dark",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-deuteranopia-dark-theme.el",
+    "blob": "8fb9ed0b1acdc2b5fe538d6daaf23ef67bf31584",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-deuteranopia-light",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-deuteranopia-light-theme.el",
+    "blob": "c367432d178c0ea07cb79c0ab357e9e7f63dcec3",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-dream",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-dream-theme.el",
+    "blob": "1515c0f64fa2ab61fd627c3dbfdb271b873b6a7c",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-duo-dark",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-duo-dark-theme.el",
+    "blob": "cce45bb00f3aa91efad25b6ad520b7657cf07ccc",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-duo-light",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-duo-light-theme.el",
+    "blob": "5fc28cf89b86ece5c62a52069a079a10ebef22e9",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-eagle",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-eagle-theme.el",
+    "blob": "494771760c65acead5a2b1134ada420d21701471",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-elea-dark",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-elea-dark-theme.el",
+    "blob": "4c3f0cf097fd434580007acba6deed1f6b4abf13",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-elea-light",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-elea-light-theme.el",
+    "blob": "44508f64cfe4685b5eed6645200cdeee0cecd597",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-fig",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-fig-theme.el",
+    "blob": "7c040b2877da8f486b10403e2dc13a96d12c84cf",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-frost",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-frost-theme.el",
+    "blob": "437d32df6480c291fa7674102f9a03f8e028338f",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-halloween-dark",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-halloween-dark-theme.el",
+    "blob": "3f54894bb3f32d70e0e44149dc6075529aa4ff51",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-halloween-light",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-halloween-light-theme.el",
+    "blob": "768629e33b7c84c2f37b5c2e8c3617988a294817",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-kassio",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-kassio-theme.el",
+    "blob": "46a006a3dda808ed36ebcb916404f847cf6487bb",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-light",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-light-theme.el",
+    "blob": "7d740446f8f04940a0c05295ee02862994607c35",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-maris-dark",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-maris-dark-theme.el",
+    "blob": "dd2a86ba2ff8282297b1f0dd37d0d7d13894941c",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-maris-light",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-maris-light-theme.el",
+    "blob": "3ba8cd87471349aa72c483777ce85c207df8599b",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-melissa-dark",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-melissa-dark-theme.el",
+    "blob": "f4f74e157dbb9a1a9c3c0860ebcca0424aa3635f",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-melissa-light",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-melissa-light-theme.el",
+    "blob": "0cb067ced4cdad7c2ed6eda899aaae788464ced8",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-night",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-night-theme.el",
+    "blob": "37e3e4328140e17c724a31a07e287241c0378739",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-orange",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-orange-theme.el",
+    "blob": "e52c49e09681e84ab4a759f2977102e3d2ad14f6",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-owl",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-owl-theme.el",
+    "blob": "334d18660add505fa533d5f5326e16f109be553f",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-reverie",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-reverie-theme.el",
+    "blob": "db72a1002bec55604463de64e46e78a59cf12f2d",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-rosa",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-rosa-theme.el",
+    "blob": "c62e13eed77387ccfacc74238f1409943534c480",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-spring",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-spring-theme.el",
+    "blob": "20b6ed30262cd2f9749b4b3d8c6b3124e575847d",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-summer",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-summer-theme.el",
+    "blob": "6370abcda2a3f2b53475ce547c5dcaa647898b34",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-symbiosis",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-symbiosis-theme.el",
+    "blob": "18012ffb54aa3a20c57b13351001f9e5de370818",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-trio-dark",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-trio-dark-theme.el",
+    "blob": "c16fb506dfa0607250ca02d7eac770f5e01a8dd0",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-trio-light",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-trio-light-theme.el",
+    "blob": "937f3e4c4990eda65d26ddc4a118d10d84455fd4",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-tritanopia-dark",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-tritanopia-dark-theme.el",
+    "blob": "6df738cac5b96fa424ae6e960dbd947f455192f1",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-tritanopia-light",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-tritanopia-light-theme.el",
+    "blob": "1f2e7c6143bace45a8c9fa64fd7a988f07c97440",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "ef-winter",
+    "collection": "Ef",
+    "package": "ef-themes",
+    "repository": "https://github.com/protesilaos/ef-themes",
+    "commit": "b8dee07feb9d0671dc8953ccb5d6af1b9b10ac2d",
+    "describe": "2.2.1-51-gb8dee07",
+    "version": "2.2.1",
+    "file": "ef-winter-theme.el",
+    "blob": "f664e47f35ad11c54437a8f67edde9b61cbb559d",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2022-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "gruvbox-dark-hard",
+    "collection": "Gruvbox",
+    "package": "gruvbox-theme",
+    "repository": "https://github.com/greduan/emacs-theme-gruvbox",
+    "commit": "351a3ced876fe0b294398ef6bb37c8b7b8a246a7",
+    "describe": "1.30.4-1-g351a3ce",
+    "version": "1.30.3",
+    "file": "gruvbox-dark-hard-theme.el",
+    "blob": "0877381508d375634baf5c7c981badf2a8d068d9",
+    "licence": "MIT",
+    "authors": [
+      "Jason Milkins"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (c) 2013 Lee Machin",
+      "Copyright (c) 2013-2016 Eduardo Lavaque",
+      "Copyright (c) 2016-2022 Jason Milkins",
+      "Copyright (c) 2017-2018 Martijn Terpstra"
+    ],
+    "original": null
+  },
+  {
+    "theme": "gruvbox-dark-medium",
+    "collection": "Gruvbox",
+    "package": "gruvbox-theme",
+    "repository": "https://github.com/greduan/emacs-theme-gruvbox",
+    "commit": "351a3ced876fe0b294398ef6bb37c8b7b8a246a7",
+    "describe": "1.30.4-1-g351a3ce",
+    "version": "1.30.3",
+    "file": "gruvbox-dark-medium-theme.el",
+    "blob": "fa97054302422ad8118c9ce805994c9fadaf8b44",
+    "licence": "MIT",
+    "authors": [
+      "Jason Milkins"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (c) 2013 Lee Machin",
+      "Copyright (c) 2013-2016 Eduardo Lavaque",
+      "Copyright (c) 2016-2022 Jason Milkins",
+      "Copyright (c) 2017-2018 Martijn Terpstra"
+    ],
+    "original": null
+  },
+  {
+    "theme": "gruvbox-dark-soft",
+    "collection": "Gruvbox",
+    "package": "gruvbox-theme",
+    "repository": "https://github.com/greduan/emacs-theme-gruvbox",
+    "commit": "351a3ced876fe0b294398ef6bb37c8b7b8a246a7",
+    "describe": "1.30.4-1-g351a3ce",
+    "version": "1.30.3",
+    "file": "gruvbox-dark-soft-theme.el",
+    "blob": "e003b2d9ecddee3efacd5d197e26f7a4b56504b9",
+    "licence": "MIT",
+    "authors": [
+      "Jason Milkins"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (c) 2013 Lee Machin",
+      "Copyright (c) 2013-2016 Eduardo Lavaque",
+      "Copyright (c) 2016-2022 Jason Milkins",
+      "Copyright (c) 2017-2018 Martijn Terpstra"
+    ],
+    "original": null
+  },
+  {
+    "theme": "gruvbox-light-hard",
+    "collection": "Gruvbox",
+    "package": "gruvbox-theme",
+    "repository": "https://github.com/greduan/emacs-theme-gruvbox",
+    "commit": "351a3ced876fe0b294398ef6bb37c8b7b8a246a7",
+    "describe": "1.30.4-1-g351a3ce",
+    "version": "1.30.3",
+    "file": "gruvbox-light-hard-theme.el",
+    "blob": "b9a3d7115b5f47b840636dd6f71edb80ebe31d21",
+    "licence": "MIT",
+    "authors": [
+      "Jason Milkins"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (c) 2013 Lee Machin",
+      "Copyright (c) 2013-2016 Eduardo Lavaque",
+      "Copyright (c) 2016-2022 Jason Milkins",
+      "Copyright (c) 2017-2018 Martijn Terpstra"
+    ],
+    "original": null
+  },
+  {
+    "theme": "gruvbox-light-medium",
+    "collection": "Gruvbox",
+    "package": "gruvbox-theme",
+    "repository": "https://github.com/greduan/emacs-theme-gruvbox",
+    "commit": "351a3ced876fe0b294398ef6bb37c8b7b8a246a7",
+    "describe": "1.30.4-1-g351a3ce",
+    "version": "1.30.3",
+    "file": "gruvbox-light-medium-theme.el",
+    "blob": "be844b00b346485e1620824f26e024d0c57a12bd",
+    "licence": "MIT",
+    "authors": [
+      "Jason Milkins"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (c) 2013 Lee Machin",
+      "Copyright (c) 2013-2016 Eduardo Lavaque",
+      "Copyright (c) 2016-2022 Jason Milkins",
+      "Copyright (c) 2017-2018 Martijn Terpstra"
+    ],
+    "original": null
+  },
+  {
+    "theme": "gruvbox-light-soft",
+    "collection": "Gruvbox",
+    "package": "gruvbox-theme",
+    "repository": "https://github.com/greduan/emacs-theme-gruvbox",
+    "commit": "351a3ced876fe0b294398ef6bb37c8b7b8a246a7",
+    "describe": "1.30.4-1-g351a3ce",
+    "version": "1.30.3",
+    "file": "gruvbox-light-soft-theme.el",
+    "blob": "5974a022f3ea3c57aaf57f2fd68ee89c3d840f59",
+    "licence": "MIT",
+    "authors": [
+      "Jason Milkins"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (c) 2013 Lee Machin",
+      "Copyright (c) 2013-2016 Eduardo Lavaque",
+      "Copyright (c) 2016-2022 Jason Milkins",
+      "Copyright (c) 2017-2018 Martijn Terpstra"
+    ],
+    "original": null
+  },
+  {
+    "theme": "leuven",
+    "collection": "Emacs",
+    "package": "GNU Emacs",
+    "repository": "https://github.com/emacs-mirror/emacs",
+    "commit": "a360712c9d272d950d8d8255ef74570f7e90b7d9",
+    "describe": "emacs-31.1",
+    "version": "31.1",
+    "file": "etc/themes/leuven-theme.el",
+    "blob": "29ee90210802d1c8ebfb6c41466c215c39e549b8",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Fabrice Niessen"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2003-2026 Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "leuven-dark",
+    "collection": "Emacs",
+    "package": "GNU Emacs",
+    "repository": "https://github.com/emacs-mirror/emacs",
+    "commit": "a360712c9d272d950d8d8255ef74570f7e90b7d9",
+    "describe": "emacs-31.1",
+    "version": "31.1",
+    "file": "etc/themes/leuven-dark-theme.el",
+    "blob": "b58a64cb92eaf1a4905007602178819f82d5a2f8",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Fabrice Niessen"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2003-2026 Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "manoj-dark",
+    "collection": "Emacs",
+    "package": "GNU Emacs",
+    "repository": "https://github.com/emacs-mirror/emacs",
+    "commit": "a360712c9d272d950d8d8255ef74570f7e90b7d9",
+    "describe": "emacs-31.1",
+    "version": "31.1",
+    "file": "etc/themes/manoj-dark-theme.el",
+    "blob": "b8e9cf6494fc4dd6528d763ff480612ece8c7e79",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Manoj Srivastava"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2011-2026 Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "misterioso",
+    "collection": "Emacs",
+    "package": "GNU Emacs",
+    "repository": "https://github.com/emacs-mirror/emacs",
+    "commit": "a360712c9d272d950d8d8255ef74570f7e90b7d9",
+    "describe": "emacs-31.1",
+    "version": "31.1",
+    "file": "etc/themes/misterioso-theme.el",
+    "blob": "716b0c938d4397032dbf285ca788de2661973d7d",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Sebastian Hermida"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2011-2026 Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "modus-operandi",
+    "collection": "Modus",
+    "package": "modus-themes",
+    "repository": "https://github.com/protesilaos/modus-themes",
+    "commit": "782743415b3eedac0b99db2342fb35703deb752f",
+    "describe": "5.3.0-72-g7827434",
+    "version": "5.3.0",
+    "file": "modus-operandi-theme.el",
+    "blob": "e4e6f6fabed3cf1bb08a2f60408ce2609259f3c1",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2019-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "modus-operandi-deuteranopia",
+    "collection": "Modus",
+    "package": "modus-themes",
+    "repository": "https://github.com/protesilaos/modus-themes",
+    "commit": "782743415b3eedac0b99db2342fb35703deb752f",
+    "describe": "5.3.0-72-g7827434",
+    "version": "5.3.0",
+    "file": "modus-operandi-deuteranopia-theme.el",
+    "blob": "802b0eb0f1513c451c4d62e8bb1421134b521657",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2019-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "modus-operandi-tinted",
+    "collection": "Modus",
+    "package": "modus-themes",
+    "repository": "https://github.com/protesilaos/modus-themes",
+    "commit": "782743415b3eedac0b99db2342fb35703deb752f",
+    "describe": "5.3.0-72-g7827434",
+    "version": "5.3.0",
+    "file": "modus-operandi-tinted-theme.el",
+    "blob": "92e14a4c1df3e7abda602ff6531640c39720db02",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2019-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "modus-operandi-tritanopia",
+    "collection": "Modus",
+    "package": "modus-themes",
+    "repository": "https://github.com/protesilaos/modus-themes",
+    "commit": "782743415b3eedac0b99db2342fb35703deb752f",
+    "describe": "5.3.0-72-g7827434",
+    "version": "5.3.0",
+    "file": "modus-operandi-tritanopia-theme.el",
+    "blob": "f8a2e62dacc8dcca9edd5dd77a2c0e26da93acac",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2019-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "modus-vivendi",
+    "collection": "Modus",
+    "package": "modus-themes",
+    "repository": "https://github.com/protesilaos/modus-themes",
+    "commit": "782743415b3eedac0b99db2342fb35703deb752f",
+    "describe": "5.3.0-72-g7827434",
+    "version": "5.3.0",
+    "file": "modus-vivendi-theme.el",
+    "blob": "8ce0d69d464b496bffe528634c7b96634f8a0ed7",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2019-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "modus-vivendi-deuteranopia",
+    "collection": "Modus",
+    "package": "modus-themes",
+    "repository": "https://github.com/protesilaos/modus-themes",
+    "commit": "782743415b3eedac0b99db2342fb35703deb752f",
+    "describe": "5.3.0-72-g7827434",
+    "version": "5.3.0",
+    "file": "modus-vivendi-deuteranopia-theme.el",
+    "blob": "9f339aee436bb29b4e64d95398e3f22253b7b4d1",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2019-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "modus-vivendi-tinted",
+    "collection": "Modus",
+    "package": "modus-themes",
+    "repository": "https://github.com/protesilaos/modus-themes",
+    "commit": "782743415b3eedac0b99db2342fb35703deb752f",
+    "describe": "5.3.0-72-g7827434",
+    "version": "5.3.0",
+    "file": "modus-vivendi-tinted-theme.el",
+    "blob": "588d34e4ba89d4888dbe605e163f1ec76e23411d",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2019-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "modus-vivendi-tritanopia",
+    "collection": "Modus",
+    "package": "modus-themes",
+    "repository": "https://github.com/protesilaos/modus-themes",
+    "commit": "782743415b3eedac0b99db2342fb35703deb752f",
+    "describe": "5.3.0-72-g7827434",
+    "version": "5.3.0",
+    "file": "modus-vivendi-tritanopia-theme.el",
+    "blob": "81a0b58d4422d6def6c34e3a362386e13eaa0b80",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Protesilaos"
+    ],
+    "maintainers": [
+      "Protesilaos"
+    ],
+    "copyright": [
+      "Copyright (C) 2019-2026  Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "nord",
+    "collection": "Nord",
+    "package": "nord-theme",
+    "repository": "https://github.com/nordtheme/emacs",
+    "commit": "551b2b8a0751c0a22e5c5daa6958152f208e668f",
+    "describe": "v0.6.0",
+    "version": "0.6.0",
+    "file": "nord-theme.el",
+    "blob": "55d8d0d5fd7bf54c142106c941d3a807fb263315",
+    "licence": "MIT",
+    "authors": [
+      "Sven Greb"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (c) 2016-present Sven Greb <development@svengreb.de> (https://www.svengreb.de)"
+    ],
+    "original": null
+  },
+  {
+    "theme": "sanityinc-tomorrow-blue",
+    "collection": "Tomorrow",
+    "package": "color-theme-sanityinc-tomorrow",
+    "repository": "https://github.com/purcell/color-theme-sanityinc-tomorrow",
+    "commit": "3b7af324a7391fba53d07bef4495e9e4e8cbcece",
+    "describe": "1.19",
+    "version": "1.19",
+    "file": "sanityinc-tomorrow-blue-theme.el",
+    "blob": "581ec7e2a4d96cfb3172713434b7c03fb82dadb8",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Steve Purcell"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2012-2026 Steve Purcell"
+    ],
+    "original": null
+  },
+  {
+    "theme": "sanityinc-tomorrow-bright",
+    "collection": "Tomorrow",
+    "package": "color-theme-sanityinc-tomorrow",
+    "repository": "https://github.com/purcell/color-theme-sanityinc-tomorrow",
+    "commit": "3b7af324a7391fba53d07bef4495e9e4e8cbcece",
+    "describe": "1.19",
+    "version": "1.19",
+    "file": "sanityinc-tomorrow-bright-theme.el",
+    "blob": "bea6ba339e042fb07eb20a184c7c0d20dd055da9",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Steve Purcell"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2012-2026 Steve Purcell"
+    ],
+    "original": null
+  },
+  {
+    "theme": "sanityinc-tomorrow-day",
+    "collection": "Tomorrow",
+    "package": "color-theme-sanityinc-tomorrow",
+    "repository": "https://github.com/purcell/color-theme-sanityinc-tomorrow",
+    "commit": "3b7af324a7391fba53d07bef4495e9e4e8cbcece",
+    "describe": "1.19",
+    "version": "1.19",
+    "file": "sanityinc-tomorrow-day-theme.el",
+    "blob": "863c01eecb0bb131e8951a5dc9fc0e38fb572ce9",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Steve Purcell"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2012-2026 Steve Purcell"
+    ],
+    "original": null
+  },
+  {
+    "theme": "sanityinc-tomorrow-eighties",
+    "collection": "Tomorrow",
+    "package": "color-theme-sanityinc-tomorrow",
+    "repository": "https://github.com/purcell/color-theme-sanityinc-tomorrow",
+    "commit": "3b7af324a7391fba53d07bef4495e9e4e8cbcece",
+    "describe": "1.19",
+    "version": "1.19",
+    "file": "sanityinc-tomorrow-eighties-theme.el",
+    "blob": "d6fadd3ca1e2228c3f09991dc4de539b886b8a9e",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Steve Purcell"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2012-2026 Steve Purcell"
+    ],
+    "original": null
+  },
+  {
+    "theme": "sanityinc-tomorrow-night",
+    "collection": "Tomorrow",
+    "package": "color-theme-sanityinc-tomorrow",
+    "repository": "https://github.com/purcell/color-theme-sanityinc-tomorrow",
+    "commit": "3b7af324a7391fba53d07bef4495e9e4e8cbcece",
+    "describe": "1.19",
+    "version": "1.19",
+    "file": "sanityinc-tomorrow-night-theme.el",
+    "blob": "4a908599f57a4804cd1fb22d1013541aa17df862",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Steve Purcell"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2012-2026 Steve Purcell"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-apple-dark",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-apple-dark-theme.el",
+    "blob": "197266642e20a7a69ce1446ac353c12e3826bc39",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Thomas Frössman"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2026 Thomas Frössman"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-apple-light",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-apple-light-theme.el",
+    "blob": "9583c3de7a3abca48c2cea1053ba9279e48ee82a",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Thomas Frössman"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2026 Thomas Frössman"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-carbon-dark",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-carbon-dark-theme.el",
+    "blob": "674f4810de0026618a093ed9c20a2a1252e8073d",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Thomas Frössman"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2026 Thomas Frössman"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-carbon-light",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-carbon-light-theme.el",
+    "blob": "5129bf7db7fa05e373200982578f11a8901c21ed",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Thomas Frössman"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2026 Thomas Frössman"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-carbonfox",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-carbonfox-theme.el",
+    "blob": "a0b371e9c8e4022734181c4393e325fad7b39158",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Thomas Frössman"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2026 Thomas Frössman"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-dark",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-dark-theme.el",
+    "blob": "f9f83d4cc7167d28cb25b97b595a5bf13ed2afde",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Bozhidar Batsov"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2011-2025 Bozhidar Batsov"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-dark-high-contrast",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-dark-high-contrast-theme.el",
+    "blob": "d35d9478254058e846a98b35b50e890206686c46",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Thomas Frössman"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2019 Thomas Frössman"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-dawnfox",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-dawnfox-theme.el",
+    "blob": "d6ae052c04b84264968ff116fafec330edf6095c",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Thomas Frössman"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2026 Thomas Frössman"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-dayfox",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-dayfox-theme.el",
+    "blob": "0036bb0da698345f964c21f8a175d43764ee26ea",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Thomas Frössman"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2026 Thomas Frössman"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-duskfox",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-duskfox-theme.el",
+    "blob": "71b43b0838f7b1881555284aea5042433830b4e1",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Thomas Frössman"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2026 Thomas Frössman"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-everforest-dark",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-everforest-dark-theme.el",
+    "blob": "78bcc7acc30475c302d6e84d61c51a74610155dc",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Thomas Frössman"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2026 Thomas Frössman"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-everforest-light",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-everforest-light-theme.el",
+    "blob": "d03050c31a367e79ef0effd84cab7473490ccc73",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Thomas Frössman"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2026 Thomas Frössman"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-flexoki-dark",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-flexoki-dark-theme.el",
+    "blob": "9c46c5c891489faa443e1fd04731990fb3904537",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Thomas Frössman"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2026 Thomas Frössman"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-flexoki-light",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-flexoki-light-theme.el",
+    "blob": "fc5d7a3c67f2daf2c11729bdcc5af0e97ccec83f",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Thomas Frössman"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2026 Thomas Frössman"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-kanagawa-dragon",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-kanagawa-dragon-theme.el",
+    "blob": "2c1a93122cd9f1620d1aababb14171e7fa08850c",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Thomas Frössman"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2026 Thomas Frössman"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-kanagawa-lotus",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-kanagawa-lotus-theme.el",
+    "blob": "5a9976fdb1b9747a73a64b03ffb07cbcb718d12d",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Thomas Frössman"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2026 Thomas Frössman"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-kanagawa-wave",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-kanagawa-wave-theme.el",
+    "blob": "1e5768c5e9a27c0234e9674f44ba31b3e775d6c4",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Thomas Frössman"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2026 Thomas Frössman"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-light",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-light-theme.el",
+    "blob": "14a9bde3eb347e234695a6a22f8e0e99f6b51edc",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Bozhidar Batsov"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2011-2025 Bozhidar Batsov"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-light-high-contrast",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-light-high-contrast-theme.el",
+    "blob": "b4e0b96b212fb08619ea9a972485edc6a9a19980",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Thomas Frössman"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2019 Thomas Frössman"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-nightfox",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-nightfox-theme.el",
+    "blob": "ad9f4c5d26f2b196f0a98c6f2a16859b121943aa",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Thomas Frössman"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2026 Thomas Frössman"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-selenized-black",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-selenized-black-theme.el",
+    "blob": "dc85d743e706b708b860123aa2bb7dfe99f7b707",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Thomas Frössman"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2019 Thomas Frössman"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-selenized-dark",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-selenized-dark-theme.el",
+    "blob": "2b8460df53bcfa23db682be712d3498281b31cfa",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Thomas Frössman"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2019 Thomas Frössman"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-selenized-light",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-selenized-light-theme.el",
+    "blob": "cc03bd756de579fd1cf675c67fa1b95e5c379840",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Thomas Frössman"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2019 Thomas Frössman"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-selenized-white",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-selenized-white-theme.el",
+    "blob": "7c726bb4087797209c8b6a3fd0be0f97880adb41",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Thomas Frössman"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2019 Thomas Frössman"
+    ],
+    "original": null
+  },
+  {
+    "theme": "solarized-terafox",
+    "collection": "Solarized",
+    "package": "solarized-theme",
+    "repository": "https://github.com/bbatsov/solarized-emacs",
+    "commit": "c3efdaa7ff693a1b83ffa64e5631c9770e80c54d",
+    "describe": "v2.2.0-13-gc3efdaa",
+    "version": "2.2.0",
+    "file": "solarized-terafox-theme.el",
+    "blob": "e11e0f2a08bc16dfcac437e73cfe7114b34ea220",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Thomas Frössman"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2026 Thomas Frössman"
+    ],
+    "original": null
+  },
+  {
+    "theme": "tango",
+    "collection": "Emacs",
+    "package": "GNU Emacs",
+    "repository": "https://github.com/emacs-mirror/emacs",
+    "commit": "a360712c9d272d950d8d8255ef74570f7e90b7d9",
+    "describe": "emacs-31.1",
+    "version": "31.1",
+    "file": "etc/themes/tango-theme.el",
+    "blob": "b6c4b95add9fec8e8e5df9121dfed74ae833e9d2",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Free Software Foundation, Inc"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2010-2026 Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "tango-dark",
+    "collection": "Emacs",
+    "package": "GNU Emacs",
+    "repository": "https://github.com/emacs-mirror/emacs",
+    "commit": "a360712c9d272d950d8d8255ef74570f7e90b7d9",
+    "describe": "emacs-31.1",
+    "version": "31.1",
+    "file": "etc/themes/tango-dark-theme.el",
+    "blob": "ac00c9fc5a7744b30d30a14b62f703780fd86adc",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Free Software Foundation, Inc"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2010-2026 Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "tsdh-dark",
+    "collection": "Emacs",
+    "package": "GNU Emacs",
+    "repository": "https://github.com/emacs-mirror/emacs",
+    "commit": "a360712c9d272d950d8d8255ef74570f7e90b7d9",
+    "describe": "emacs-31.1",
+    "version": "31.1",
+    "file": "etc/themes/tsdh-dark-theme.el",
+    "blob": "6dfe2570a2b78c404e06a2ec536e98331f6b855c",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Free Software Foundation, Inc"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2011-2026 Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "tsdh-light",
+    "collection": "Emacs",
+    "package": "GNU Emacs",
+    "repository": "https://github.com/emacs-mirror/emacs",
+    "commit": "a360712c9d272d950d8d8255ef74570f7e90b7d9",
+    "describe": "emacs-31.1",
+    "version": "31.1",
+    "file": "etc/themes/tsdh-light-theme.el",
+    "blob": "16dff21899c9e7c874efa4d120dad9f36c6edb3b",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Free Software Foundation, Inc"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2011-2026 Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "wheatgrass",
+    "collection": "Emacs",
+    "package": "GNU Emacs",
+    "repository": "https://github.com/emacs-mirror/emacs",
+    "commit": "a360712c9d272d950d8d8255ef74570f7e90b7d9",
+    "describe": "emacs-31.1",
+    "version": "31.1",
+    "file": "etc/themes/wheatgrass-theme.el",
+    "blob": "dc6876afd1e22ad2246eb1352ddb53cea66e4368",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Free Software Foundation, Inc"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2010-2026 Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "whiteboard",
+    "collection": "Emacs",
+    "package": "GNU Emacs",
+    "repository": "https://github.com/emacs-mirror/emacs",
+    "commit": "a360712c9d272d950d8d8255ef74570f7e90b7d9",
+    "describe": "emacs-31.1",
+    "version": "31.1",
+    "file": "etc/themes/whiteboard-theme.el",
+    "blob": "0a7ce48ea3c9f4e1b942fac1a12a1f287aa800e4",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Scott Frazer"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2011-2026 Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "wombat",
+    "collection": "Emacs",
+    "package": "GNU Emacs",
+    "repository": "https://github.com/emacs-mirror/emacs",
+    "commit": "a360712c9d272d950d8d8255ef74570f7e90b7d9",
+    "describe": "emacs-31.1",
+    "version": "31.1",
+    "file": "etc/themes/wombat-theme.el",
+    "blob": "0ffe88fd191c655d41a3f8857c862e7c461aa78c",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Kristoffer Grönlund"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2011-2026 Free Software Foundation, Inc."
+    ],
+    "original": null
+  },
+  {
+    "theme": "zenburn",
+    "collection": "Zenburn",
+    "package": "zenburn-theme",
+    "repository": "https://github.com/bbatsov/zenburn-emacs",
+    "commit": "5b251bb01aa1d64055a50ea68ea4f4c060336705",
+    "describe": "v2.11.0-3-g5b251bb",
+    "version": "2.11.0",
+    "file": "zenburn-theme.el",
+    "blob": "10e9a3c3c5eabdbdcb0bf37ce526e84169b7a6e8",
+    "licence": "GPL-3.0-or-later",
+    "authors": [
+      "Bozhidar Batsov"
+    ],
+    "maintainers": [],
+    "copyright": [
+      "Copyright (C) 2011-2026 Bozhidar Batsov"
+    ],
+    "original": null
+  }
+]

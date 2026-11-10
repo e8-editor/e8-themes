@@ -2,13 +2,10 @@
 //
 // The zenburn theme for E8.
 //
-// A port to E8 of zenburn-theme 2.11.0 (https://github.com/bbatsov/zenburn-emacs),
-// written by tools/port-themes.el from the faces Emacs gives the theme, for
-// the faces E8 and its ports draw. It is not the upstream authors' work as
-// they published it, and they do not endorse it.
+// A port to E8 of zenburn-theme.el from zenburn-theme 2.11.0 (https://github.com/bbatsov/zenburn-emacs), at commit 5b251bb01aa1, v2.11.0-3-g5b251bb. Written by tools/port-themes.el from the faces Emacs gives the theme; sources.json says more. It is not the upstream authors' work as they published it, and they do not endorse it.
 //
+// Author: Bozhidar Batsov
 // Copyright (C) 2011-2026 Bozhidar Batsov
-// Copyright (C) 2009 Jani Nurminen
 // Copyright (C) 2026 The E8 contributors
 //
 // This program is free software: you can redistribute it and/or modify it
@@ -27,35 +24,35 @@ deftheme("zenburn", "The Zenburn color theme.");
 
 /** The colours, by the names the upstream gives them. */
 const c = {
-  fg1: "#656555",
-  fg: "#DCDCCC",
-  bg2: "#000000",
-  bg1: "#2B2B2B",
+  fg1: "#ffffef",
+  fg: "#dcdccc",
+  bg2: "#5f5f5f",
+  bg1: "#4f4f4f",
   bg05: "#383838",
-  bg: "#3F3F3F",
-  bg3: "#6F6F6F",
-  red4: "#8C5353",
-  red3: "#9C6363",
-  red2: "#AC7373",
-  red1: "#BC8383",
-  red: "#CC9393",
-  orange: "#DFAF8F",
-  yellow2: "#D0BF8F",
-  yellow1: "#E0CF9F",
-  yellow: "#F0DFAF",
-  green4: "#3F5F3F",
-  green3: "#4F6F4F",
-  green2: "#5F7F5F",
-  green1: "#6F8F6F",
-  green: "#7F9F7F",
-  cyan: "#93E0E3",
-  blue3: "#BDE0F3",
-  blue2: "#ACE0E3",
-  blue1: "#94BFF3",
-  blue: "#8CD0D3",
-  blue4: "#4C7073",
+  bg: "#3f3f3f",
+  bg3: "#6f6f6f",
+  red4: "#8c5353",
+  red3: "#9c6363",
+  red2: "#ac7373",
+  red1: "#bc8383",
+  red: "#cc9393",
+  orange: "#dfaf8f",
+  yellow2: "#d0bf8f",
+  yellow1: "#e0cf9f",
+  yellow: "#f0dfaf",
+  green4: "#bfebbf",
+  green3: "#afd8af",
+  green2: "#9fc59f",
+  green1: "#8fb28f",
+  green: "#7f9f7f",
+  cyan: "#93e0e3",
+  blue3: "#5c888b",
+  blue2: "#6ca0a3",
+  blue1: "#7cb8bb",
+  blue: "#8cd0d3",
+  blue4: "#4c7073",
   blue5: "#366060",
-  magenta: "#DC8CC3",
+  magenta: "#dc8cc3",
 };
 
 customThemeSetFaces("zenburn", [

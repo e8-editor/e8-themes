@@ -1,15 +1,14 @@
 // SPDX-License-Identifier: MIT
 //
-// What the gruvbox themes share: their faces, in terms of each one's palette.
+// What the Gruvbox themes share: their faces, in terms of each one's palette.
 //
-// A port to E8 of emacs-theme-gruvbox 1.30.3 (https://github.com/greduan/emacs-theme-gruvbox),
-// written by tools/port-themes.el from the faces Emacs gives the theme, for
-// the faces E8 and its ports draw. It is not the upstream authors' work as
-// they published it, and they do not endorse it.
+// A port to E8 of the faces from gruvbox-theme 1.30.3 (https://github.com/greduan/emacs-theme-gruvbox), at commit 351a3ced876f, 1.30.4-1-g351a3ce. Written by tools/port-themes.el from the faces Emacs gives the theme; sources.json says more. It is not the upstream authors' work as they published it, and they do not endorse it.
 //
+// Author: Jason Milkins
 // Copyright (c) 2013 Lee Machin
 // Copyright (c) 2013-2016 Eduardo Lavaque
 // Copyright (c) 2016-2022 Jason Milkins
+// Copyright (c) 2017-2018 Martijn Terpstra
 // Copyright (C) 2026 The E8 contributors
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -35,15 +34,18 @@ import { customThemeSetFaces, deftheme, provideTheme } from "custom";
 /** A theme's colours, by the names its upstream gives them. */
 export type Palette = Record<string, string>;
 
-/** Defines and provides the theme NAME in the colours of palette C, with EXTRA faces of its own. */
-export function defineGruvboxTheme(name: string, doc: string, c: Palette, extra: [string, e8.FaceAttributes][] = []): void {
+/**
+ * Defines and provides the theme NAME in the colours of palette C, with
+ * the faces OWN gives in place of the family's, and without those OMIT names.
+ */
+export function defineGruvboxTheme(name: string, doc: string, c: Palette, own: [string, e8.FaceAttributes][] = [], omit: string[] = []): void {
   deftheme(name, doc);
-  customThemeSetFaces(name, [
-    ["default", { background: c.dark0, foreground: c.light1 }],
+  const faces: [string, e8.FaceAttributes][] = [
+    ["default", { background: c.defaultBackground, foreground: c.light1 }],
     ["cursor", { background: c.light1 }],
     ["mode-line", { background: c.dark3, foreground: c.light2, box: false }],
     ["mode-line-inactive", { background: c.dark1, foreground: c.light4, box: false }],
-    ["fringe", { background: c.dark0 }],
+    ["fringe", { background: c.fringeBackground }],
     ["hl-line", { background: c.dark1 }],
     ["region", { background: c.dark2 }],
     ["secondary-selection", { background: c.dark1 }],
@@ -81,7 +83,7 @@ export function defineGruvboxTheme(name: string, doc: string, c: Palette, extra:
     ["diff-context", { background: c.dark1, foreground: c.light1 }],
     ["diff-added", { foreground: c.brightGreen }],
     ["diff-refine-added", { background: c.fadedGreen, foreground: c.light1 }],
-    ["diff-removed", { foreground: c.brightRed }],
+    ["diff-removed", { foreground: c.neutralRed }],
     ["diff-refine-removed", { background: c.fadedRed, foreground: c.light1 }],
     ["diff-indicator-changed", { inherit: "diff-changed" }],
     ["diff-indicator-added", { inherit: "diff-added" }],
@@ -114,14 +116,14 @@ export function defineGruvboxTheme(name: string, doc: string, c: Palette, extra:
     ["tooltip", { foreground: c.light1, background: c.dark1 }],
     ["marginalia-documentation", { foreground: c.light3 }],
     ["org-hide", { foreground: c.dark0 }],
-    ["org-level-1", { foreground: c.brightBlue }],
-    ["org-level-2", { foreground: c.brightYellow }],
-    ["org-level-3", { foreground: c.brightPurple }],
-    ["org-level-4", { foreground: c.brightRed }],
-    ["org-level-5", { foreground: c.brightGreen }],
-    ["org-level-6", { foreground: c.brightAqua }],
-    ["org-level-7", { foreground: c.fadedBlue }],
-    ["org-level-8", { foreground: c.brightOrange }],
+    ["outline-1", { foreground: c.brightBlue }],
+    ["outline-2", { foreground: c.brightYellow }],
+    ["outline-3", { foreground: c.brightPurple }],
+    ["outline-4", { foreground: c.brightRed }],
+    ["outline-5", { foreground: c.brightGreen }],
+    ["outline-6", { foreground: c.brightAqua }],
+    ["outline-7", { foreground: c.fadedBlue }],
+    ["outline-8", { foreground: c.brightOrange }],
     ["org-special-keyword", { inherit: "font-lock-comment-face" }],
     ["org-drawer", { inherit: "font-lock-function-name-face" }],
     ["org-column", { background: c.dark0 }],
@@ -158,9 +160,9 @@ export function defineGruvboxTheme(name: string, doc: string, c: Palette, extra:
     ["org-habit-alert-future-face", { background: c.brightYellow }],
     ["org-habit-overdue-face", { background: c.fadedRed }],
     ["org-habit-overdue-future-face", { background: c.brightRed }],
-    ["isearch", { foreground: c.dark0, background: c.brightOrange }],
-    ["lazy-highlight", { foreground: c.dark0, background: c.brightYellow }],
-    ["isearch-fail", { foreground: c.dark0, background: c.brightRed }],
+    ["isearch", { foreground: c.isearchForeground, background: c.brightOrange }],
+    ["lazy-highlight", { foreground: c.lazyHighlightForeground, background: c.brightYellow }],
+    ["isearch-fail", { foreground: c.isearchFailForeground, background: c.brightRed }],
     ["show-paren-match", { background: c.dark3, foreground: c.brightBlue, weight: "bold" }],
     ["show-paren-mismatch", { background: c.brightRed, foreground: c.dark3, weight: "bold" }],
     ["orderless-match-face-0", { weight: "bold", foreground: c.lightblue4 }],
@@ -225,9 +227,9 @@ export function defineGruvboxTheme(name: string, doc: string, c: Palette, extra:
     ["flyspell-incorrect", { underline: { style: "line", color: c.brightRed } }],
     ["sh-quoted-exec", { foreground: c.brightPurple }],
     ["sh-heredoc", { foreground: c.brightOrange }],
-    ["tab-bar-tab-inactive", { background: c.dark0, foreground: c.light0 }],
+    ["tab-bar-tab-inactive", { background: c.tabBarTabInactiveBackground, foreground: c.light0 }],
     ["tab-bar-tab", { background: c.dark2, foreground: c.light0 }],
-    ["tab-bar", { background: c.dark0, foreground: c.light0 }],
+    ["tab-bar", { background: c.tabBarBackground, foreground: c.light0 }],
     ["ansi-color-black", { foreground: c.dark2, background: c.dark1 }],
     ["ansi-color-red", { foreground: c.brightRed, background: c.brightRed }],
     ["ansi-color-green", { foreground: c.brightGreen, background: c.brightGreen }],
@@ -244,7 +246,7 @@ export function defineGruvboxTheme(name: string, doc: string, c: Palette, extra:
     ["ansi-color-bright-magenta", { foreground: c.brightPurple, background: c.brightPurple }],
     ["ansi-color-bright-cyan", { foreground: c.brightAqua, background: c.brightAqua }],
     ["ansi-color-bright-white", { foreground: c.light1, background: c.light1 }],
-    ...extra,
-  ]);
+  ];
+  customThemeSetFaces(name, [...faces.filter(([f]) => !omit.includes(f)), ...own]);
   provideTheme(name);
 }

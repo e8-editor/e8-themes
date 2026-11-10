@@ -1,0 +1,19 @@
+# The upstreams the themes are ported from, each pinned to the commit it was
+# ported at: name, repository, commit or tag, and for a large repository the
+# one directory to check out. tools/fetch-upstreams.sh checks each out in
+# .upstream/NAME; tools/port-themes.el ports from there and records the
+# commit, and the version and authors the theme's files declare, in
+# sources.json; tools/check-upstreams.py says which have changed since.
+ef	https://github.com/protesilaos/ef-themes	b8dee07
+doom	https://github.com/doomemacs/themes	a592029
+gruvbox	https://github.com/greduan/emacs-theme-gruvbox	351a3ce
+autothemer	https://github.com/ocodo/autothemer	d591752
+dash	https://github.com/magnars/dash.el	d746dd9
+solarized	https://github.com/bbatsov/solarized-emacs	c3efdaa
+tomorrow	https://github.com/purcell/color-theme-sanityinc-tomorrow	3b7af32
+catppuccin	https://github.com/catppuccin/emacs	56c3cbe
+zenburn	https://github.com/bbatsov/zenburn-emacs	5b251bb
+dracula	https://github.com/dracula/emacs	538b8d2
+nord	https://github.com/nordtheme/emacs	551b2b8
+modus	https://github.com/protesilaos/modus-themes	7827434
+emacs	https://github.com/emacs-mirror/emacs	emacs-31.1	/etc/themes/ /etc/rgb.txt

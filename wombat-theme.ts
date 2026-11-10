@@ -2,12 +2,10 @@
 //
 // The wombat theme for E8.
 //
-// A port to E8 of wombat-theme.el, by Kristoffer Grönlund, as GNU Emacs 30 ships it,
-// written by tools/port-themes.el from the faces Emacs gives the theme, for
-// the faces E8 and its ports draw. It is not the upstream authors' work as
-// they published it, and they do not endorse it.
+// A port to E8 of etc/themes/wombat-theme.el from GNU Emacs 31.1 (https://github.com/emacs-mirror/emacs), at commit a360712c9d27, emacs-31.1. Written by tools/port-themes.el from the faces Emacs gives the theme; sources.json says more. It is not the upstream authors' work as they published it, and they do not endorse it.
 //
-// Copyright (C) 2011-2025 Free Software Foundation, Inc.
+// Author: Kristoffer Grönlund
+// Copyright (C) 2011-2026 Free Software Foundation, Inc.
 // Copyright (C) 2026 The E8 contributors
 //
 // This program is free software: you can redistribute it and/or modify it

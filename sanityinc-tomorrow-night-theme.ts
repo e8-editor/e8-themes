@@ -2,11 +2,9 @@
 //
 // The sanityinc-tomorrow-night theme for E8.
 //
-// A port to E8 of color-theme-sanityinc-tomorrow 1.19 (https://github.com/purcell/color-theme-sanityinc-tomorrow),
-// written by tools/port-themes.el from the faces Emacs gives the theme, for
-// the faces E8 and its ports draw. It is not the upstream authors' work as
-// they published it, and they do not endorse it.
+// A port to E8 of sanityinc-tomorrow-night-theme.el from color-theme-sanityinc-tomorrow 1.19 (https://github.com/purcell/color-theme-sanityinc-tomorrow), at commit 3b7af324a739, 1.19. Written by tools/port-themes.el from the faces Emacs gives the theme; sources.json says more. It is not the upstream authors' work as they published it, and they do not endorse it.
 //
+// Author: Steve Purcell
 // Copyright (C) 2012-2026 Steve Purcell
 // Copyright (C) 2026 The E8 contributors
 //
@@ -25,7 +23,7 @@ import { defineColorThemeSanityincTomorrowTheme } from "color-theme-sanityinc-to
 /** The colours, by the names the upstream gives them. */
 const c = {
   background: "#1d1f21",
-  altBackground: "#22a224a427a7",
+  altBackground: "#222427",
   currentLine: "#282a2e",
   selection: "#373b41",
   foreground: "#c5c8c6",
@@ -37,10 +35,10 @@ const c = {
   aqua: "#8abeb7",
   blue: "#81a2be",
   purple: "#b294bb",
-  ansiColorBlackForeground: "#373b41",
-  ansiColorBlackBackground: "#373b41",
-  ansiColorWhiteForeground: "#969896",
   ansiColorWhiteBackground: "#969896",
+  ansiColorWhiteForeground: "#969896",
+  ansiColorBlackBackground: "#373b41",
+  ansiColorBlackForeground: "#373b41",
 };
 
 defineColorThemeSanityincTomorrowTheme("sanityinc-tomorrow-night", "A version of Chris Kempson's 'Tomorrow' theme (night version)", c);

@@ -1,12 +1,10 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 //
-// What the color-theme-sanityinc-tomorrow themes share: their faces, in terms of each one's palette.
+// What the Tomorrow themes share: their faces, in terms of each one's palette.
 //
-// A port to E8 of color-theme-sanityinc-tomorrow 1.19 (https://github.com/purcell/color-theme-sanityinc-tomorrow),
-// written by tools/port-themes.el from the faces Emacs gives the theme, for
-// the faces E8 and its ports draw. It is not the upstream authors' work as
-// they published it, and they do not endorse it.
+// A port to E8 of the faces from color-theme-sanityinc-tomorrow 1.19 (https://github.com/purcell/color-theme-sanityinc-tomorrow), at commit 3b7af324a739, 1.19. Written by tools/port-themes.el from the faces Emacs gives the theme; sources.json says more. It is not the upstream authors' work as they published it, and they do not endorse it.
 //
+// Author: Steve Purcell
 // Copyright (C) 2012-2026 Steve Purcell
 // Copyright (C) 2026 The E8 contributors
 //
@@ -25,10 +23,13 @@ import { customThemeSetFaces, deftheme, provideTheme } from "custom";
 /** A theme's colours, by the names its upstream gives them. */
 export type Palette = Record<string, string>;
 
-/** Defines and provides the theme NAME in the colours of palette C, with EXTRA faces of its own. */
-export function defineColorThemeSanityincTomorrowTheme(name: string, doc: string, c: Palette, extra: [string, e8.FaceAttributes][] = []): void {
+/**
+ * Defines and provides the theme NAME in the colours of palette C, with
+ * the faces OWN gives in place of the family's, and without those OMIT names.
+ */
+export function defineColorThemeSanityincTomorrowTheme(name: string, doc: string, c: Palette, own: [string, e8.FaceAttributes][] = [], omit: string[] = []): void {
   deftheme(name, doc);
-  customThemeSetFaces(name, [
+  const faces: [string, e8.FaceAttributes][] = [
     ["default", { foreground: c.foreground, background: c.background }],
     ["bold", { weight: "bold" }],
     ["bold-italic", { slant: "italic", weight: "bold" }],
@@ -283,7 +284,7 @@ export function defineColorThemeSanityincTomorrowTheme(name: string, doc: string
     ["markdown-code-face", { inherit: "fixed-pitch", background: c.background, foreground: c.purple }],
     ["markdown-inline-code-face", { inherit: "markdown-code-face" }],
     ["vertico-current", { background: c.selection, extend: true }],
-    ...extra,
-  ]);
+  ];
+  customThemeSetFaces(name, [...faces.filter(([f]) => !omit.includes(f)), ...own]);
   provideTheme(name);
 }

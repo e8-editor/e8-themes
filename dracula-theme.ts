@@ -2,12 +2,10 @@
 //
 // The dracula theme for E8.
 //
-// A port to E8 of dracula-theme 1.8.3 (https://github.com/dracula/emacs),
-// written by tools/port-themes.el from the faces Emacs gives the theme, for
-// the faces E8 and its ports draw. It is not the upstream authors' work as
-// they published it, and they do not endorse it.
+// A port to E8 of dracula-theme.el from dracula-theme 1.8.3 (https://github.com/dracula/emacs), at commit 538b8d20c667, v1.8.3-17-g538b8d2. Written by tools/port-themes.el from the faces Emacs gives the theme; sources.json says more. It is not the upstream authors' work as they published it, and they do not endorse it.
 //
-// Copyright (c) 2015-present Dracula Theme
+// Author: film42
+// Copyright 2015-present, All rights reserved
 // Copyright (C) 2026 The E8 contributors
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy

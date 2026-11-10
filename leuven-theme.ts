@@ -2,12 +2,10 @@
 //
 // The leuven theme for E8.
 //
-// A port to E8 of leuven-theme.el, by Fabrice Niessen, as GNU Emacs 30 ships it,
-// written by tools/port-themes.el from the faces Emacs gives the theme, for
-// the faces E8 and its ports draw. It is not the upstream authors' work as
-// they published it, and they do not endorse it.
+// A port to E8 of etc/themes/leuven-theme.el from GNU Emacs 31.1 (https://github.com/emacs-mirror/emacs), at commit a360712c9d27, emacs-31.1. Written by tools/port-themes.el from the faces Emacs gives the theme; sources.json says more. It is not the upstream authors' work as they published it, and they do not endorse it.
 //
-// Copyright (C) 2003-2025 Free Software Foundation, Inc.
+// Author: Fabrice Niessen
+// Copyright (C) 2003-2026 Free Software Foundation, Inc.
 // Copyright (C) 2026 The E8 contributors
 //
 // This program is free software: you can redistribute it and/or modify it
@@ -73,19 +71,19 @@ customThemeSetFaces("leuven", [
   ["ansi-color-bold", { weight: "bold" }],
   ["ansi-color-black", { foreground: "#000000", background: "#000000" }],
   ["ansi-color-red", { foreground: "#cd0000", background: "#cd0000" }],
-  ["ansi-color-green", {}],
+  ["ansi-color-green", { foreground: "#228b22", background: "#228b22" }],
   ["ansi-color-yellow", { foreground: "#cdcd00", background: "#cdcd00" }],
   ["ansi-color-blue", { foreground: "#0000ff", background: "#0000ff" }],
   ["ansi-color-magenta", { foreground: "#cd00cd", background: "#cd00cd" }],
-  ["ansi-color-cyan", {}],
+  ["ansi-color-cyan", { foreground: "#00bfff", background: "#00bfff" }],
   ["ansi-color-white", { foreground: "#999999", background: "#999999" }],
   ["ansi-color-bright-black", { foreground: "#4d4d4d", background: "#4d4d4d" }],
   ["ansi-color-bright-red", { foreground: "#ff0000", background: "#ff0000" }],
-  ["ansi-color-bright-green", {}],
+  ["ansi-color-bright-green", { foreground: "#32cd32", background: "#32cd32" }],
   ["ansi-color-bright-yellow", { foreground: "#eeee00", background: "#eeee00" }],
-  ["ansi-color-bright-blue", {}],
+  ["ansi-color-bright-blue", { foreground: "#1e90ff", background: "#1e90ff" }],
   ["ansi-color-bright-magenta", { foreground: "#ff00ff", background: "#ff00ff" }],
-  ["ansi-color-bright-cyan", {}],
+  ["ansi-color-bright-cyan", { foreground: "#87ceeb", background: "#87ceeb" }],
   ["ansi-color-bright-white", { foreground: "#cccccc", background: "#cccccc" }],
   ["diff-added", { background: "#ddffdd" }],
   ["diff-changed", { foreground: "#0000ff", background: "#ddddff" }],
@@ -103,12 +101,12 @@ customThemeSetFaces("leuven", [
   ["ediff-current-diff-A", { background: "#ffdddd" }],
   ["ediff-current-diff-B", { background: "#ddffdd" }],
   ["ediff-current-diff-C", { background: "#00ffff" }],
-  ["ediff-even-diff-A", {}],
-  ["ediff-even-diff-B", {}],
+  ["ediff-even-diff-A", { background: "#d3d3d3" }],
+  ["ediff-even-diff-B", { background: "#d3d3d3" }],
   ["ediff-fine-diff-A", { background: "#ffaaaa" }],
   ["ediff-fine-diff-B", { background: "#55ff55" }],
-  ["ediff-odd-diff-A", {}],
-  ["ediff-odd-diff-B", {}],
+  ["ediff-odd-diff-A", { background: "#d3d3d3" }],
+  ["ediff-odd-diff-B", { background: "#d3d3d3" }],
   ["flyspell-duplicate", { underline: { style: "wave", color: "#f4eb80" }, background: "#faf7cc" }],
   ["flyspell-incorrect", { underline: { style: "wave", color: "#faa7a5" }, background: "#f4d7da" }],
   ["tab-line", { background: "#5d6b99", foreground: "#5d6b99" }],
@@ -181,19 +179,19 @@ customThemeSetFaces("leuven", [
   ["org-meta-line", { slant: "normal", foreground: "#008ed1", background: "#eaeaff" }],
   ["org-mode-line-clock", { box: { lineWidth: 1, color: "#335ea8" }, foreground: "#000000", background: "#ffa335" }],
   ["org-property-value", { foreground: "#00a000" }],
-  ["org-quote", { slant: "italic", background: "#ffffe0" }],
+  ["org-quote", { slant: "italic", foreground: "#696969", background: "#ffffe0" }],
   ["org-scheduled", { foreground: "#333333" }],
   ["org-scheduled-previously", { foreground: "#1466c6" }],
   ["org-scheduled-today", { weight: "bold", foreground: "#4f4a3d", background: "#ffffcc" }],
   ["org-sexp-date", { foreground: "#3774cc" }],
   ["org-special-keyword", { weight: "bold", foreground: "#00bb00", background: "#eeffee" }],
-  ["org-table", { background: "#eeffee" }],
+  ["org-table", { foreground: "#006400", background: "#eeffee" }],
   ["org-tag", { weight: "normal", slant: "italic", foreground: "#9a9fa4", background: "#ffffff" }],
   ["org-target", { foreground: "#ff6daf" }],
   ["org-todo", { weight: "bold", box: { lineWidth: 1, color: "#d8aba7" }, foreground: "#d8aba7", background: "#ffe6e4" }],
   ["org-upcoming-deadline", { foreground: "#ff5555" }],
   ["org-verbatim", { foreground: "#0066cc", background: "#f7fdff" }],
-  ["org-verse", { slant: "italic", background: "#eeeeee" }],
+  ["org-verse", { slant: "italic", foreground: "#696969", background: "#eeeeee" }],
   ["org-warning", { weight: "bold", foreground: "#000000", background: "#cce7ff" }],
   ["outline-1", { height: 1.3, weight: "bold", overline: "#a7a7a7", foreground: "#3c3c3c", background: "#f0f0f0" }],
   ["outline-2", { height: 1.0, weight: "bold", overline: "#123555", foreground: "#123555", background: "#e5f4fb" }],
@@ -208,7 +206,7 @@ customThemeSetFaces("leuven", [
   ["shadow", { foreground: "#7f7f7f" }],
   ["show-paren-match", { background: "#c0e8c3" }],
   ["show-paren-mismatch", { weight: "bold", underline: "#ff0000", foreground: "#000000", background: "#ffa5a5" }],
-  ["tooltip", { foreground: "#000000" }],
+  ["tooltip", { foreground: "#000000", background: "#ffffe0" }],
 ]);
 
 provideTheme("leuven");
