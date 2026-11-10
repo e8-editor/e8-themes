@@ -4,14 +4,18 @@
 // there is to load, each with a strip of its own colours, beside a sample
 // of code, Org, a diff and the editor's highlights; moving through the
 // list shows each theme at once, RET keeps it and q goes back to the one
-// before. The themes themselves are the NAME-theme.ts files beside this
-// one, loaded by load-theme as any theme is:
+// before; / narrows the list as you type, and TAB shows only the dark or
+// the light themes. The themes themselves are the NAME-theme.ts files
+// beside this one, loaded by load-theme as any theme is:
 //
 //   e8.usePackage("e8-editor/e8-themes");
 //   e8.call("load-theme", "modus-vivendi", true);
 //
-// Emacs has no command like e8-themes-select; consult-theme, which
-// previews in the minibuffer, is the nearest.
+// The chooser reads what it shows of this repository's themes from
+// e8-themes-index.ts, which tools/port-themes.el writes, so it opens
+// without loading them; a theme of the user's own is read when the
+// chooser opens. Emacs has no command like e8-themes-select;
+// consult-theme, which previews in the minibuffer, is the nearest.
 //
 // Copyright (C) 2026 The E8 contributors
 //
@@ -27,8 +31,9 @@
 
 import * as custom from "custom";
 import { disableTheme, enableTheme, loadTheme } from "custom";
+import { THEMES, type ThemeEntry } from "e8-themes-index";
 
-/** What custom gives in E8 0.5.2 and later, reached so that older E8s still run the chooser, reading each theme by enabling it. */
+/** What custom gives in E8 0.5.2 and later, reached so that older E8s still run the chooser, reading a theme of the user's by enabling it. */
 const customApi = custom as unknown as {
   customThemeSettings?: (name: string) => { doc: string; faces: [string, e8.FaceAttributes][] } | undefined;
   customAvailableThemes?: () => string[];
@@ -40,27 +45,24 @@ e8.defineFace({ name: "e8-themes-enabled", doc: "Face of the mark beside the the
 e8.defineFace({ name: "e8-themes-title", doc: "Face of the theme's name above the sample.", attributes: { inherit: "bold", height: 1.4 } });
 e8.defineFace({ name: "e8-themes-label", doc: "Face of the labels in the sample.", attributes: { inherit: "shadow", slant: "italic" } });
 
-/** What the chooser shows of a theme. */
-export interface ThemeInfo {
-  name: string;
-  doc: string;
-  /** Whether its background is dark, by luminance. */
-  dark: boolean;
-  background?: string;
-  foreground?: string;
-  /** Its colours for keywords, functions, strings, types, constants and comments. */
-  swatches: string[];
-}
+/** What the chooser shows of a theme: its index entry, or as much of one as a theme of the user's own gives. */
+export type ThemeInfo = Pick<ThemeEntry, "name" | "collection" | "doc" | "dark" | "swatches"> &
+  Partial<Pick<ThemeEntry, "background" | "foreground" | "contrast" | "source">>;
 
-/** The faces whose colours a theme's strip shows. */
+/** The faces whose colours a theme's strip shows, as the index gives them. */
 const SWATCH_FACES = [
   "font-lock-keyword-face",
-  "font-lock-function-name-face",
   "font-lock-string-face",
+  "font-lock-function-name-face",
   "font-lock-type-face",
   "font-lock-constant-face",
   "font-lock-comment-face",
 ];
+
+/** Themes of this repository the chooser does not list: catppuccin follows catppuccin-flavor, whose flavours are listed each as a theme. */
+const UNLISTED = new Set(["catppuccin"]);
+
+const INDEX = new Map(THEMES.map((t) => [t.name, t]));
 
 /** The themes there are to load: custom-available-themes, or each NAME-theme.ts along load-path in an older E8. */
 export function availableThemes(): string[] {
@@ -90,10 +92,13 @@ export function colourDarkP(color: string): boolean {
 }
 
 /**
- * What the chooser shows of THEME, loading it, without enabling it, if it
- * is not loaded; undefined if it cannot be loaded.
+ * What the chooser shows of THEME: its entry in the index, or for a theme
+ * of the user's own, what it gives once loaded, without enabling it;
+ * undefined if it cannot be loaded.
  */
 export function themeInfo(theme: string): ThemeInfo | undefined {
+  const entry = INDEX.get(theme);
+  if (entry) return entry;
   try {
     if (!customApi.customThemeSettings?.(theme)) loadTheme(theme, true, true);
   } catch (e) {
@@ -120,6 +125,7 @@ export function themeInfo(theme: string): ThemeInfo | undefined {
   const foreground = attribute("default", "foreground");
   return {
     name: theme,
+    collection: "Yours",
     doc: settings.doc.split("\n")[0] ?? "",
     dark: background !== undefined && colourDarkP(background),
     background,
@@ -143,7 +149,23 @@ function enabledInfo(theme: string): ThemeInfo {
   const swatches = SWATCH_FACES.map((f) => get(f, ":foreground") ?? foreground).filter((c): c is string => c !== undefined);
   disableTheme(theme);
   for (const t of [...before].reverse()) enableTheme(t);
-  return { name: theme, doc: "", dark: background !== undefined && colourDarkP(background), background, foreground, swatches };
+  return { name: theme, collection: "Yours", doc: "", dark: background !== undefined && colourDarkP(background), background, foreground, swatches };
+}
+
+/**
+ * Whether theme T matches QUERY: each of its words in T's name,
+ * collection, description, authors or the theme it is after; "dark" and
+ * "light" match T's background, not words such as "lights" in its
+ * description.
+ */
+export function matches(t: ThemeInfo, query: string): boolean {
+  const words = query.toLowerCase().split(/\s+/).filter((w) => w !== "");
+  // Each word must begin a word of T's, so "ef" finds ef-summer but not "default".
+  const theirs = [t.name, t.collection, t.doc, ...(t.source?.authors ?? []), t.source?.original ?? ""]
+    .join(" ")
+    .toLowerCase()
+    .split(/[^\p{L}\p{N}]+/u);
+  return words.every((w) => (w === "dark" ? t.dark : w === "light" ? !t.dark : theirs.some((x) => x.startsWith(w))));
 }
 
 // The chooser.
@@ -156,6 +178,7 @@ interface Session {
   configuration: e8.WindowConfiguration;
   themes: ThemeInfo[];
   filter: Filter;
+  query: string;
   selected: string | undefined;
   previewed: string | undefined;
 }
@@ -170,10 +193,12 @@ const enabledThemes = (): string[] => {
   return Array.isArray(v) ? v.map(String) : [];
 };
 
-/** The themes the filter lets through, dark ones first, each group by name. */
-function shown(s: Session): ThemeInfo[] {
-  const keep = s.themes.filter((t) => s.filter === "all" || (s.filter === "dark") === t.dark);
-  return [...keep.filter((t) => t.dark), ...keep.filter((t) => !t.dark)];
+/** The themes the filter and the query let through: dark ones first, each by collection, the user's own last, then by name. */
+function shown(s: Pick<Session, "themes" | "filter" | "query">): ThemeInfo[] {
+  const keep = s.themes.filter((t) => (s.filter === "all" || (s.filter === "dark") === t.dark) && matches(t, s.query));
+  const key = (t: ThemeInfo) => `${t.collection === "Yours" ? "~" : t.collection}\u0000${t.name}`;
+  const sorted = [...keep].sort((a, b) => (key(a) < key(b) ? -1 : key(a) > key(b) ? 1 : 0));
+  return [...sorted.filter((t) => t.dark), ...sorted.filter((t) => !t.dark)];
 }
 
 /** Text in a face: a face name, a list of them, or an anonymous face's attributes. */
@@ -190,6 +215,16 @@ function strip(t: ThemeInfo): (e8.PropertizedString | string)[] {
     seg(" ", on(undefined)),
   ];
 }
+
+/** The list's header line: how many themes it shows, of how many, and why. */
+function headerLine(s: Session, count: number): string {
+  const which = s.filter === "all" ? "themes" : `${s.filter} themes`;
+  const what = s.query === "" && s.filter === "all" ? `${count} themes` : `${count} of ${s.themes.length} ${which}${s.query ? ` matching “${s.query}”` : ""}`;
+  return ` ${what}`.replace(/%/g, "%%");
+}
+
+/** The keys, in the wide sample window's header line. */
+const KEYS = " n p move   RET keep it   q go back   / filter   TAB dark or light";
 
 /** Writes the list, the selection on SELECTED, and puts point there. */
 function renderList(s: Session): void {
@@ -214,24 +249,18 @@ function renderList(s: Session): void {
         e8.insert(`  ${t.name}`);
         if (s.saved[0] === t.name) e8.insert(seg("  ✓", "e8-themes-enabled"));
         e8.insert("\n");
-        if (selected) {
-          // The selection's face under the strip's own, to the window's edge.
-          e8.addFaceTextProperty(start, e8.point(), "e8-themes-selected", { append: true });
-        }
+        // The selection's face under the strip's own, to the window's edge.
+        if (selected) e8.addFaceTextProperty(start, e8.point(), "e8-themes-selected", { append: true });
         e8.putTextProperty(start, e8.point(), "e8-themes-theme", t.name);
       }
-      if (themes.length === 0) e8.insert(seg(" No themes along load-path.\n", "shadow"));
-      const dark = s.themes.filter((t) => t.dark).length;
-      e8.insert(seg(`\n ${s.themes.length} themes, ${dark} dark and ${s.themes.length - dark} light`, "shadow"));
+      if (themes.length === 0) e8.insert(seg(s.themes.length === 0 ? " No themes along load-path.\n" : " No theme matches.\n", "shadow"));
       e8.gotoChar(at ?? e8.pointMin());
       e8.setBufferModified(false);
+      e8.setVariable("header-line-format", headerLine(s, themes.length));
     });
   });
   const win = e8.windowList().find((w) => e8.windowBuffer(w) === LIST);
   if (win !== undefined) e8.setWindowPoint(win, e8.withCurrentBuffer(LIST, () => e8.point()));
-  e8.withCurrentBuffer(LIST, () =>
-    e8.setVariable("header-line-format", ` ${s.filter === "all" ? "All" : s.filter === "dark" ? "Dark" : "Light"} themes   RET keep  q back  TAB filter`),
-  );
 }
 
 /** The sample: each line a list of [text, face] parts. */
@@ -264,6 +293,16 @@ const SAMPLE_LINES: [string, e8.Value?][][] = [
   [[" 14 ", "line-number"], [" "], ["Find file: ", "minibuffer-prompt"], ["~/proj/"], ["e8", "completions-common-part"], ["-themes/"]],
 ];
 
+/** Who made theme T and where it comes from, for the sample's head: a line or two. */
+export function credit(t: ThemeInfo): string[] {
+  const src = t.source;
+  if (!src) return [t.collection === "Yours" ? "A theme of your own, along load-path." : ""];
+  const by = src.authors.length ? `By ${src.authors.join(", ")}` : "";
+  const after = src.original ? `, after ${src.original.replace(/^https?:\/\/(www\.)?/, "")}` : "";
+  const contrast = t.contrast ? `   Contrast ${t.contrast.text}:1 text, ${t.contrast.code}:1 code, ${t.contrast.comments}:1 comments` : "";
+  return [`${by}${after}.`, `From ${src.package} ${src.version} at ${src.commit.slice(0, 7)}, ${src.licence}.${contrast}`];
+}
+
 /** Writes the sample for theme T, or for the themes enabled when there is none. */
 function renderSample(t: ThemeInfo | undefined): void {
   e8.withCurrentBuffer(SAMPLE, () => {
@@ -272,8 +311,10 @@ function renderSample(t: ThemeInfo | undefined): void {
       e8.insert("\n ");
       e8.insert(seg(t?.name ?? "No theme", "e8-themes-title"));
       e8.insert("\n");
-      const about = t ? [t.dark ? "A dark theme" : "A light theme", t.doc].filter((x) => x !== "").join(". ") : "Emacs's own faces";
-      e8.insert(seg(` ${about.replace(/\.$/, "")}.\n\n`, "shadow"));
+      const about = t ? [`A ${t.dark ? "dark" : "light"} theme${t.collection !== "Yours" ? ` from ${t.collection}` : ""}`, t.doc].filter((x) => x !== "").join(". ") : "Emacs's own faces";
+      e8.insert(seg(` ${about.replace(/\.$/, "")}.\n`, "shadow"));
+      for (const line of t ? credit(t) : []) if (line !== "") e8.insert(seg(` ${line}\n`, "e8-themes-label"));
+      e8.insert("\n");
       for (const line of SAMPLE_LINES) {
         e8.insert(" ");
         for (const [text, face] of line) e8.insert(seg(text, face));
@@ -327,6 +368,12 @@ export function select(theme: string): void {
   renderList(s);
 }
 
+/** Puts the selection on the first theme shown if the one it is on is not, without showing it. */
+function keepSelectionShown(s: Session): void {
+  const themes = shown(s);
+  if (themes.length > 0 && !themes.some((t) => t.name === s.selected)) s.selected = themes[0].name;
+}
+
 /** Closes the chooser, keeping the theme it shows if KEEP, else enabling again the themes enabled before. */
 function close(keep: boolean): string | undefined {
   const s = current();
@@ -365,9 +412,53 @@ const cycleFilter = e8.defineCommand({
   run: () => {
     const s = current();
     s.filter = s.filter === "all" ? "dark" : s.filter === "dark" ? "light" : "all";
-    const themes = shown(s);
-    if (themes.length > 0 && !themes.some((t) => t.name === s.selected)) select(themes[0].name);
+    const was = s.selected;
+    keepSelectionShown(s);
+    if (s.selected !== was && s.selected) select(s.selected);
     else renderList(s);
+  },
+});
+
+/** Sets the query, the list narrowing as it is typed, and shows the theme the selection is then on. */
+export function setQuery(query: string): void {
+  const s = current();
+  s.query = query;
+  keepSelectionShown(s);
+  if (s.selected) select(s.selected);
+  else renderList(s);
+}
+
+const filter = e8.defineCommand({
+  name: "e8-themes-filter",
+  doc: "Narrow the list to the themes matching words typed: in their names, collections, descriptions or authors, or dark or light. The list narrows as you type; RET shows the first match, C-g goes back to the words before.",
+  run: () => {
+    const s = current();
+    const before = s.query;
+    const depth = e8.minibufferDepth() + 1;
+    const update = () => {
+      if (session !== s) return;
+      s.query = e8.minibufferContents();
+      keepSelectionShown(s);
+      renderList(s);
+    };
+    const setup = () => {
+      if (e8.minibufferDepth() !== depth) return;
+      e8.removeHook("minibuffer-setup-hook", setup);
+      e8.addHook("post-command-hook", update, { local: true });
+    };
+    e8.addHook("minibuffer-setup-hook", setup);
+    let query: string;
+    try {
+      query = e8.readString("Filter themes: ", { initial: before });
+    } catch (e) {
+      s.query = before;
+      keepSelectionShown(s);
+      renderList(s);
+      throw e;
+    } finally {
+      e8.removeHook("minibuffer-setup-hook", setup);
+    }
+    setQuery(query.trim());
   },
 });
 
@@ -392,7 +483,7 @@ const listMode = e8.defineMajorMode({
   name: "e8-themes-mode",
   modeName: "Themes",
   parent: "special-mode",
-  doc: "The theme chooser's list: moving shows each theme, RET keeps it and q goes back.",
+  doc: "The theme chooser's list: moving shows each theme, RET keeps it, q goes back, / narrows the list and TAB shows dark or light themes only.",
   bindings: {
     n: next,
     p: previous,
@@ -407,6 +498,8 @@ const listMode = e8.defineMajorMode({
     RET: choose,
     q: quit,
     "C-g": quit,
+    "/": filter,
+    s: filter,
     TAB: cycleFilter,
     "<mouse-1>": mouseSelect,
   },
@@ -424,20 +517,22 @@ const sampleMode = e8.defineMajorMode({
   setup: () => {
     e8.setVariable("truncate-lines", true);
     e8.setVariable("cursor-type", false);
+    e8.setVariable("header-line-format", KEYS);
   },
 });
 
 e8.defineCommand({
   name: "e8-themes-select",
-  doc: "Choose a theme from all there are to load, showing each one, with a sample of text in it, as the selection moves. RET keeps the theme, q goes back to the themes enabled before.",
+  doc: "Choose a theme from all there are to load, showing each one, with a sample of text in it, as the selection moves. RET keeps the theme, q goes back to the themes enabled before, / narrows the list as you type and TAB shows only dark or light themes.",
   run: () => {
     if (session) close(false);
     const saved = enabledThemes();
     const configuration = e8.currentWindowConfiguration();
     const themes = availableThemes()
+      .filter((name) => !UNLISTED.has(name))
       .map(themeInfo)
       .filter((t): t is ThemeInfo => t !== undefined);
-    const s: Session = { saved, configuration, themes, filter: "all", selected: undefined, previewed: saved[0] };
+    const s: Session = { saved, configuration, themes, filter: "all", query: "", selected: undefined, previewed: saved[0] };
     s.selected = saved.find((t) => themes.some((i) => i.name === t)) ?? shown(s)[0]?.name;
     session = s;
     for (const [name, mode] of [[LIST, listMode], [SAMPLE, sampleMode]] as const) {
@@ -447,7 +542,8 @@ e8.defineCommand({
     e8.call("delete-other-windows");
     const list = e8.selectedWindow();
     e8.setWindowBuffer(list, LIST);
-    const width = 3 + 4 + SWATCH_FACES.length + 1 + 2 + Math.max(16, ...themes.map((t) => t.name.length)) + 4;
+    // As wide as the rows, the strip and the longest name, up to half the frame.
+    const width = 3 + 4 + SWATCH_FACES.length + 1 + 2 + Math.max(16, ...themes.map((t) => t.name.length)) + 5;
     const sample = e8.splitWindow(list, "right", Math.min(width, Math.floor(e8.frameWidth() / 2)));
     e8.setWindowBuffer(sample, SAMPLE);
     e8.selectWindow(list);

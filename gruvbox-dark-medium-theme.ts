@@ -2,14 +2,13 @@
 //
 // The gruvbox-dark-medium theme for E8.
 //
-// A port to E8 of emacs-theme-gruvbox 1.30.3 (https://github.com/greduan/emacs-theme-gruvbox),
-// written by tools/port-themes.el from the faces Emacs gives the theme, for
-// the faces E8 and its ports draw. It is not the upstream authors' work as
-// they published it, and they do not endorse it.
+// A port to E8 of gruvbox-dark-medium-theme.el from gruvbox-theme 1.30.3 (https://github.com/greduan/emacs-theme-gruvbox), at commit 351a3ced876f, 1.30.4-1-g351a3ce. Written by tools/port-themes.el from the faces Emacs gives the theme; sources.json says more. It is not the upstream authors' work as they published it, and they do not endorse it.
 //
+// Author: Jason Milkins
 // Copyright (c) 2013 Lee Machin
 // Copyright (c) 2013-2016 Eduardo Lavaque
 // Copyright (c) 2016-2022 Jason Milkins
+// Copyright (c) 2017-2018 Martijn Terpstra
 // Copyright (C) 2026 The E8 contributors
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -52,6 +51,7 @@ const c = {
   brightPurple: "#d3869b",
   brightAqua: "#8ec07c",
   brightOrange: "#fe8019",
+  neutralRed: "#fb4933",
   fadedRed: "#cc241d",
   fadedGreen: "#98971a",
   fadedYellow: "#d79921",
@@ -60,7 +60,7 @@ const c = {
   fadedOrange: "#d65d0e",
   delimiterThree: "#8ec07c",
   black: "#000000",
-  lightblue4: "#66999D",
+  lightblue4: "#66999d",
   ediffCurrentDiffA: "#4f2121",
   ediffCurrentDiffB: "#243c24",
   ediffCurrentDiffC: "#4f214f",
@@ -69,6 +69,13 @@ const c = {
   ediffFineDiffB: "#1c691c",
   ediffFineDiffC: "#761976",
   ediffFineDiffAncestor: "#12129d",
+  tabBarBackground: "#282828",
+  tabBarTabInactiveBackground: "#282828",
+  isearchFailForeground: "#282828",
+  lazyHighlightForeground: "#282828",
+  isearchForeground: "#282828",
+  fringeBackground: "#282828",
+  defaultBackground: "#282828",
 };
 
 defineGruvboxTheme("gruvbox-dark-medium", "A retro-groove colour theme (dark version, medium contrast)", c);
