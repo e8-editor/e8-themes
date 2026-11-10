@@ -85,7 +85,7 @@ customThemeSetFaces("dracula", [
   ["org-level-6", { weight: "normal", foreground: c.orange }],
   ["org-level-5", { weight: "normal", foreground: c.cyan }],
   ["org-level-4", { weight: "normal", foreground: c.yellow }],
-  ["org-level-3", { weight: "normal", foreground: c.green, height: 1.0 }],
+  ["org-level-3", { weight: "normal", foreground: c.green }],
   ["org-level-2", { inherit: "bold", foreground: c.purple, height: 1.1 }],
   ["org-level-1", { inherit: "bold", foreground: c.pink, height: 1.3 }],
   ["org-hide", { foreground: c.bg, background: c.bg }],

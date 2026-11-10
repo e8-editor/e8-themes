@@ -25,7 +25,7 @@ e8.usePackage("e8-editor/e8-themes");
 e8.call("load-theme", "modus-vivendi", true);
 ```
 
-`usePackage` installs the package at its newest version tag into `repos/` beside `init.ts`, records the commit in `e8-lock.json`, and loads `e8-themes`, which defines the chooser. A theme loads only when `load-theme` asks for it; `true` says not to ask before running its code. `M-x package-vc-upgrade` brings the package up to date. It needs E8 0.5.0 or newer; with 0.5.2 or newer, `load-theme` completes over every theme before any is loaded.
+`usePackage` installs the package at its newest version tag into `repos/` beside `init.ts`, records the commit in `e8-lock.json`, and loads `e8-themes`, which defines the chooser. A theme loads only when `load-theme` asks for it; `true` says not to ask before running its code. `M-x package-vc-upgrade` brings the package up to date. It needs E8 0.5.0 or newer; with 0.5.2 or newer, `load-theme` completes over every theme before any is loaded; 0.5.3 draws each theme as Emacs does in a few more places: the `:distant-foreground` some themes give search matches and the region, and diff lines on dark themes that do not give them colours of their own.
 
 ## Choosing a theme
 
@@ -40,12 +40,12 @@ The list opens at once: what it shows of these themes comes from `e8-themes-inde
 
 ## Options
 
-- Nord: `nord-region-highlight` (`null`, `"snowstorm"` or `"frost"`) and `nord-uniform-mode-lines`, set before `load-theme`.
+- Nord: `nord-region-highlight` (`null`, `"snowstorm"` or `"frost"`) and `nord-uniform-mode-lines`, set before `load-theme`. From E8 0.5.3, `load-theme` loads the theme again, so they take effect after it has been loaded once too, as in Emacs.
 - Catppuccin: each flavour is a theme, `catppuccin-latte` to `catppuccin-mocha`. `catppuccin` itself follows `catppuccin-flavor`, as upstream's does; `M-x catppuccin-load-flavor` changes it.
 
 ## How the themes are ported
 
-Each theme is a port of an Emacs theme, made by `tools/port-themes.el`, which loads the upstream theme in Emacs without enabling it and writes, for each face E8 and its ports draw and those they inherit from, the attributes Emacs gives it on a graphical frame in millions of colours, each colour by its name in the upstream's palette. Themes that share their faces, as Ef shares Modus's and Doom's share doom-themes-base, are one module of faces and a file per theme holding its palette, as upstream has them. Nord is a port by hand, with its options.
+Each theme is a port of an Emacs theme, made by `tools/port-themes.el`, which loads the upstream theme in Emacs without enabling it and writes, for each face E8 and its ports draw and those they inherit from, the attributes Emacs gives it on a graphical frame in millions of colours, each colour by its name in the upstream's palette. Themes that share their faces, as Ef shares Modus's and Doom's share doom-themes-base, are one module of faces and a file per theme holding its palette, as upstream has them. Nord is written the same way, its options added from `tools/nord-options.ts`.
 
 **Where each comes from is recorded.** `tools/upstreams.tsv` pins each upstream to a commit or tag. `sources.json` records, for every theme, its repository, the commit it was ported at, the git object of its own file there, the version and authors its files declare, its copyright and licence, and the theme it is itself a port of. Each theme's file carries the same in its header.
 
