@@ -39,11 +39,13 @@ const customApi = custom as unknown as {
   customAvailableThemes?: () => string[];
 };
 
-e8.defineFace({ name: "e8-themes-group", doc: "Face of the Dark and Light headings in e8-themes-select.", attributes: { inherit: ["shadow", "bold"] } });
+// The chooser's own text is in the theme's ordinary colours, never shadow,
+// which many themes dim below easy reading.
+e8.defineFace({ name: "e8-themes-group", doc: "Face of the Dark and Light headings in e8-themes-select.", attributes: { weight: "bold" } });
 e8.defineFace({ name: "e8-themes-selected", doc: "Face of the theme the selection is on in e8-themes-select.", attributes: { inherit: ["highlight", "bold"], extend: true } });
 e8.defineFace({ name: "e8-themes-enabled", doc: "Face of the mark beside the theme enabled before e8-themes-select.", attributes: { inherit: "success" } });
 e8.defineFace({ name: "e8-themes-title", doc: "Face of the theme's name above the sample.", attributes: { inherit: "bold", height: 1.4 } });
-e8.defineFace({ name: "e8-themes-label", doc: "Face of the labels in the sample.", attributes: { inherit: "shadow", slant: "italic" } });
+e8.defineFace({ name: "e8-themes-label", doc: "Face of the labels and credits in the sample.", attributes: { slant: "italic" } });
 
 /** What the chooser shows of a theme: its index entry, or as much of one as a theme of the user's own gives. */
 export type ThemeInfo = Pick<ThemeEntry, "name" | "collection" | "doc" | "dark" | "swatches"> &
@@ -207,7 +209,7 @@ const seg = (text: string, face?: e8.Value): e8.PropertizedString | string =>
 
 /** A theme's strip: "Aa" in its own colours, then a dot in each of its accents, on its background. */
 function strip(t: ThemeInfo): (e8.PropertizedString | string)[] {
-  if (!t.background) return [seg("  no colours  ", "shadow")];
+  if (!t.background) return [seg("  no colours  ", "e8-themes-label")];
   const on = (fg: string | undefined): e8.Value => [":background", t.background!, ...(fg ? [":foreground", fg] : [])] as e8.Value;
   return [
     seg(" Aa ", [":weight", "bold", ...(on(t.foreground) as string[])] as e8.Value),
@@ -253,7 +255,7 @@ function renderList(s: Session): void {
         if (selected) e8.addFaceTextProperty(start, e8.point(), "e8-themes-selected", { append: true });
         e8.putTextProperty(start, e8.point(), "e8-themes-theme", t.name);
       }
-      if (themes.length === 0) e8.insert(seg(s.themes.length === 0 ? " No themes along load-path.\n" : " No theme matches.\n", "shadow"));
+      if (themes.length === 0) e8.insert(seg(s.themes.length === 0 ? " No themes along load-path.\n" : " No theme matches.\n", "e8-themes-label"));
       e8.gotoChar(at ?? e8.pointMin());
       e8.setBufferModified(false);
       e8.setVariable("header-line-format", headerLine(s, themes.length));
@@ -313,7 +315,7 @@ function renderSample(t: ThemeInfo | undefined): void {
       e8.insert(seg(t?.name ?? "No theme", "e8-themes-title"));
       e8.insert("\n");
       const about = t ? [`A ${t.dark ? "dark" : "light"} theme${t.collection !== "Yours" ? ` from ${t.collection}` : ""}`, t.doc].filter((x) => x !== "").join(". ") : "Emacs's own faces";
-      e8.insert(seg(` ${about.replace(/\.$/, "")}.\n`, "shadow"));
+      e8.insert(` ${about.replace(/\.$/, "")}.\n`);
       for (const line of t ? credit(t) : []) if (line !== "") e8.insert(seg(` ${line}\n`, "e8-themes-label"));
       e8.insert("\n");
       for (const line of SAMPLE_LINES) {
@@ -538,7 +540,13 @@ e8.defineCommand({
     session = s;
     for (const [name, mode] of [[LIST, listMode], [SAMPLE, sampleMode]] as const) {
       e8.getBufferCreate(name);
-      e8.withCurrentBuffer(name, () => e8.call(mode));
+      e8.withCurrentBuffer(name, () => {
+        e8.call(mode);
+        // A global-visual-line-mode turns wrapping on after the mode is set
+        // up; the list and the sample are laid out unwrapped.
+        if (e8.variable("visual-line-mode") === true) e8.callWithPrefix(-1, "visual-line-mode");
+        e8.setVariable("truncate-lines", true);
+      });
     }
     e8.call("delete-other-windows");
     const list = e8.selectedWindow();

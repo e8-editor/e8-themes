@@ -1,19 +1,12 @@
 // SPDX-License-Identifier: MIT
 //
-// Nord for E8: an arctic, north-bluish theme, after nord-theme.el 0.6.0
-// (https://github.com/nordtheme/emacs). Its faces for what E8 has: the
-// base faces, font-lock, the mode line, search, diff, whitespace, Org and
-// completion. Installed and loaded from init.ts with
+// The nord theme for E8.
 //
-//   e8.usePackage("e8-editor/e8-themes");
-//   e8.call("load-theme", "nord", true);
+// A port to E8 of nord-theme.el from nord-theme 0.6.0 (https://github.com/nordtheme/emacs), at commit 551b2b8a0751, v0.6.0. Written by tools/port-themes.el from the faces Emacs gives the theme; sources.json says more. It is not the upstream authors' work as they published it, and they do not endorse it.
 //
-// true saying not to ask first.
-//
+// Author: Sven Greb
 // Copyright (c) 2016-present Sven Greb <development@svengreb.de> (https://www.svengreb.de)
-// Copyright (C) 2018 Google LLC.
 // Copyright (C) 2026 The E8 contributors
-// Ported to E8 in 2026.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -35,6 +28,159 @@
 
 import { customThemeSetFaces, deftheme, provideTheme } from "custom";
 
+deftheme("nord", "An arctic, north-bluish clean and elegant theme");
+
+customThemeSetFaces("nord", [
+  ["default", { foreground: "#d8dee9", background: "#2e3440" }],
+  ["bold", { weight: "bold" }],
+  ["bold-italic", { weight: "bold", slant: "italic" }],
+  ["error", { foreground: "#bf616a", weight: "bold" }],
+  ["escape-glyph", { foreground: "#d08770" }],
+  ["font-lock-builtin-face", { foreground: "#81a1c1" }],
+  ["font-lock-comment-face", { foreground: "#616e88" }],
+  ["font-lock-comment-delimiter-face", { foreground: "#616e88" }],
+  ["font-lock-constant-face", { foreground: "#81a1c1" }],
+  ["font-lock-doc-face", { foreground: "#616e88" }],
+  ["font-lock-function-name-face", { foreground: "#88c0d0" }],
+  ["font-lock-keyword-face", { foreground: "#81a1c1" }],
+  ["font-lock-negation-char-face", { foreground: "#81a1c1" }],
+  ["font-lock-preprocessor-face", { foreground: "#5e81ac", weight: "bold" }],
+  ["font-lock-reference-face", { foreground: "#81a1c1" }],
+  ["font-lock-regexp-grouping-backslash", { foreground: "#ebcb8b" }],
+  ["font-lock-regexp-grouping-construct", { foreground: "#ebcb8b" }],
+  ["font-lock-string-face", { foreground: "#a3be8c" }],
+  ["font-lock-type-face", { foreground: "#8fbcbb" }],
+  ["font-lock-variable-name-face", { foreground: "#d8dee9" }],
+  ["font-lock-warning-face", { foreground: "#ebcb8b" }],
+  ["italic", { slant: "italic" }],
+  ["shadow", { foreground: "#4c566a" }],
+  ["underline", { underline: true }],
+  ["warning", { foreground: "#ebcb8b", weight: "bold" }],
+  ["diff-added", { foreground: "#a3be8c" }],
+  ["diff-changed", { foreground: "#ebcb8b" }],
+  ["diff-context", { inherit: "default" }],
+  ["diff-file-header", { foreground: "#88c0d0" }],
+  ["diff-function", { foreground: "#8fbcbb" }],
+  ["diff-header", { foreground: "#81a1c1", weight: "bold" }],
+  ["diff-hunk-header", { foreground: "#81a1c1", background: "#2e3440" }],
+  ["diff-indicator-added", { foreground: "#a3be8c" }],
+  ["diff-indicator-changed", { foreground: "#ebcb8b" }],
+  ["diff-indicator-removed", { foreground: "#bf616a" }],
+  ["diff-nonexistent", { foreground: "#bf616a" }],
+  ["diff-refine-added", { foreground: "#a3be8c" }],
+  ["diff-refine-changed", { foreground: "#ebcb8b" }],
+  ["diff-refine-removed", { foreground: "#bf616a" }],
+  ["diff-removed", { foreground: "#bf616a" }],
+  ["border", { foreground: "#d8dee9" }],
+  ["buffer-menu-buffer", { foreground: "#d8dee9", weight: "bold" }],
+  ["button", { background: "#2e3440", foreground: "#88c0d0", box: { lineWidth: 2, color: "#d8dee9", style: "pressed-button" } }],
+  ["completions-annotations", { foreground: "#81a1c1" }],
+  ["completions-common-part", { foreground: "#88c0d0", weight: "bold" }],
+  ["completions-first-difference", { foreground: "#bf616a" }],
+  ["cursor", { background: "#d8dee9" }],
+  ["fringe", { foreground: "#d8dee9", background: "#2e3440" }],
+  ["file-name-shadow", { inherit: "shadow" }],
+  ["header-line", { foreground: "#d8dee9", background: "#434c5e" }],
+  ["help-argument-name", { foreground: "#88c0d0" }],
+  ["highlight", { foreground: "#88c0d0", background: "#434c5e" }],
+  ["hl-line", { background: "#3b4252" }],
+  ["isearch", { foreground: "#2e3440", background: "#88c0d0" }],
+  ["isearch-fail", { foreground: "#bf616a" }],
+  ["link", { underline: true }],
+  ["link-visited", { underline: true }],
+  ["match", { inherit: "isearch" }],
+  ["minibuffer-prompt", { foreground: "#88c0d0", weight: "bold" }],
+  ["mode-line", { foreground: "#88c0d0", background: "#4c566a" }],
+  ["mode-line-buffer-id", { weight: "bold" }],
+  ["mode-line-highlight", { inherit: "highlight" }],
+  ["mode-line-inactive", { foreground: "#d8dee9", background: "#3b4252" }],
+  ["next-error", { inherit: "error" }],
+  ["nobreak-space", { foreground: "#4c566a" }],
+  ["outline-1", { foreground: "#88c0d0", weight: "bold" }],
+  ["outline-2", { inherit: "outline-1" }],
+  ["outline-3", { inherit: "outline-1" }],
+  ["outline-4", { inherit: "outline-1" }],
+  ["outline-5", { inherit: "outline-1" }],
+  ["outline-6", { inherit: "outline-1" }],
+  ["outline-7", { inherit: "outline-1" }],
+  ["outline-8", { inherit: "outline-1" }],
+  ["query-replace", { foreground: "#88c0d0", background: "#434c5e" }],
+  ["region", { background: "#434c5e" }],
+  ["secondary-selection", { background: "#434c5e" }],
+  ["show-paren-match", { foreground: "#2e3440", background: "#88c0d0" }],
+  ["show-paren-mismatch", { background: "#bf616a" }],
+  ["success", { foreground: "#a3be8c" }],
+  ["tooltip", { foreground: "#2e3440", background: "#d8dee9" }],
+  ["trailing-whitespace", { foreground: "#4c566a" }],
+  ["vertical-border", { foreground: "#434c5e" }],
+  ["whitespace-line", { background: "#2e3440" }],
+  ["whitespace-trailing", { inherit: "trailing-whitespace" }],
+  ["window-divider", { background: "#4c566a" }],
+  ["window-divider-first-pixel", { background: "#4c566a" }],
+  ["window-divider-last-pixel", { background: "#4c566a" }],
+  ["markdown-blockquote-face", { foreground: "#616e88" }],
+  ["markdown-inline-code-face", { foreground: "#8fbcbb" }],
+  ["markdown-link-face", { foreground: "#88c0d0" }],
+  ["markdown-url-face", { foreground: "#d8dee9", underline: true }],
+  ["magit-diff-context-highlight", { background: "#434c5e" }],
+  ["magit-diffstat-added", { foreground: "#a3be8c" }],
+  ["magit-diffstat-removed", { foreground: "#bf616a" }],
+  ["magit-hash", { foreground: "#88c0d0" }],
+  ["magit-log-author", { foreground: "#8fbcbb" }],
+  ["magit-process-ng", { foreground: "#ebcb8b", weight: "bold" }],
+  ["magit-process-ok", { foreground: "#a3be8c", weight: "bold" }],
+  ["magit-section-heading", { foreground: "#8fbcbb", weight: "bold" }],
+  ["magit-section-highlight", { background: "#434c5e" }],
+  ["org-level-1", { foreground: "#8fbcbb", weight: "extra-bold" }],
+  ["org-level-2", { foreground: "#88c0d0", weight: "bold" }],
+  ["org-level-3", { foreground: "#81a1c1", weight: "semi-bold" }],
+  ["org-level-4", { foreground: "#5e81ac", weight: "normal" }],
+  ["org-level-5", { inherit: "org-level-4" }],
+  ["org-level-6", { inherit: "org-level-4" }],
+  ["org-level-7", { inherit: "org-level-4" }],
+  ["org-level-8", { inherit: "org-level-4" }],
+  ["org-agenda-structure", { foreground: "#81a1c1" }],
+  ["org-agenda-date", { foreground: "#88c0d0", underline: false }],
+  ["org-agenda-done", { foreground: "#a3be8c" }],
+  ["org-agenda-dimmed-todo-face", { background: "#ebcb8b" }],
+  ["org-block", { foreground: "#d8dee9" }],
+  ["org-block-begin-line", { foreground: "#8fbcbb" }],
+  ["org-block-end-line", { foreground: "#8fbcbb" }],
+  ["org-checkbox", { foreground: "#81a1c1" }],
+  ["org-checkbox-statistics-done", { foreground: "#a3be8c" }],
+  ["org-checkbox-statistics-todo", { foreground: "#ebcb8b" }],
+  ["org-code", { foreground: "#8fbcbb" }],
+  ["org-column", { background: "#434c5e" }],
+  ["org-column-title", { inherit: "org-column", weight: "bold", underline: true }],
+  ["org-date", { foreground: "#88c0d0" }],
+  ["org-document-info", { foreground: "#d8dee9" }],
+  ["org-document-info-keyword", { foreground: "#4c566a", weight: "bold" }],
+  ["org-document-title", { foreground: "#88c0d0", weight: "bold" }],
+  ["org-done", { foreground: "#a3be8c", weight: "bold" }],
+  ["org-ellipsis", { foreground: "#4c566a" }],
+  ["org-footnote", { foreground: "#88c0d0" }],
+  ["org-formula", { foreground: "#81a1c1" }],
+  ["org-hide", { foreground: "#2e3440", background: "#2e3440" }],
+  ["org-link", { underline: true }],
+  ["org-scheduled", { foreground: "#a3be8c" }],
+  ["org-scheduled-previously", { foreground: "#ebcb8b" }],
+  ["org-scheduled-today", { foreground: "#88c0d0" }],
+  ["org-special-keyword", { foreground: "#81a1c1" }],
+  ["org-table", { foreground: "#81a1c1" }],
+  ["org-todo", { foreground: "#ebcb8b", weight: "bold" }],
+  ["org-upcoming-deadline", { foreground: "#d08770" }],
+  ["org-warning", { foreground: "#ebcb8b", weight: "bold" }],
+  ["org-sexp-date", { foreground: "#8fbcbb" }],
+  ["org-quote", { inherit: "org-block", slant: "italic" }],
+  ["org-verse", { inherit: "org-block", slant: "italic" }],
+  ["org-verbatim", { foreground: "#8fbcbb" }],
+]);
+
+// Nord's options, as nord-theme.el gives them: tools/port-themes.el ports
+// the theme with them unset and appends this, which gives region and
+// mode-line-inactive the faces the options choose. Set them before
+// load-theme.
+
 e8.defineVariable({
   name: "nord-region-highlight",
   doc: 'How the region shows: nil for nord2, "snowstorm" for nord0 on nord4, or "frost" for nord0 on nord8. Reload the theme after changing it.',
@@ -46,173 +192,12 @@ e8.defineVariable({
   value: false,
 });
 
-deftheme("nord", "An arctic, north-bluish clean and elegant theme");
-
-// Polar Night, Snow Storm, Frost and Aurora.
-const nord0 = "#2E3440";
-const nord1 = "#3B4252";
-const nord2 = "#434C5E";
-const nord3 = "#4C566A";
-const nord4 = "#D8DEE9";
-const nord7 = "#8FBCBB";
-const nord8 = "#88C0D0";
-const nord9 = "#81A1C1";
-const nord10 = "#5E81AC";
-const nord11 = "#BF616A";
-const nord12 = "#D08770";
-const nord13 = "#EBCB8B";
-const nord14 = "#A3BE8C";
-// Comments 10% brighter than nord3, as nord-theme--brightened-comment-color gives them.
-const nordComment = "#616E88";
-
-const highlight = e8.variable("nord-region-highlight");
-const regionForeground = highlight === "frost" || highlight === "snowstorm" ? nord0 : undefined;
-const regionBackground = highlight === "frost" ? nord8 : highlight === "snowstorm" ? nord4 : nord2;
-const inactiveModeLine = e8.variable("nord-uniform-mode-lines") === true ? nord3 : nord1;
-const wave = (color: string) => ({ style: "wave", color });
-const pressed = { lineWidth: 2, color: nord4, style: "pressed-button" };
-
-customThemeSetFaces("nord", [
-  // Base.
-  ["bold", { weight: "bold" }],
-  ["bold-italic", { weight: "bold", slant: "italic" }],
-  ["default", { foreground: nord4, background: nord0 }],
-  ["error", { foreground: nord11, weight: "bold" }],
-  ["escape-glyph", { foreground: nord12 }],
-  ["font-lock-builtin-face", { foreground: nord9 }],
-  ["font-lock-comment-face", { foreground: nordComment }],
-  ["font-lock-comment-delimiter-face", { foreground: nordComment }],
-  ["font-lock-constant-face", { foreground: nord9 }],
-  ["font-lock-doc-face", { foreground: nordComment }],
-  ["font-lock-function-name-face", { foreground: nord8 }],
-  ["font-lock-keyword-face", { foreground: nord9 }],
-  ["font-lock-negation-char-face", { foreground: nord9 }],
-  ["font-lock-preprocessor-face", { foreground: nord10, weight: "bold" }],
-  ["font-lock-reference-face", { foreground: nord9 }],
-  ["font-lock-regexp-grouping-backslash", { foreground: nord13 }],
-  ["font-lock-regexp-grouping-construct", { foreground: nord13 }],
-  ["font-lock-string-face", { foreground: nord14 }],
-  ["font-lock-type-face", { foreground: nord7 }],
-  ["font-lock-variable-name-face", { foreground: nord4 }],
-  ["font-lock-warning-face", { foreground: nord13 }],
-  ["italic", { slant: "italic" }],
-  ["shadow", { foreground: nord3 }],
-  ["underline", { underline: true }],
-  ["warning", { foreground: nord13, weight: "bold" }],
-  ["diff-added", { foreground: nord14 }],
-  ["diff-changed", { foreground: nord13 }],
-  ["diff-context", { inherit: "default" }],
-  ["diff-file-header", { foreground: nord8 }],
-  ["diff-function", { foreground: nord7 }],
-  ["diff-header", { foreground: nord9, weight: "bold" }],
-  ["diff-hunk-header", { foreground: nord9, background: nord0 }],
-  ["diff-indicator-added", { foreground: nord14 }],
-  ["diff-indicator-changed", { foreground: nord13 }],
-  ["diff-indicator-removed", { foreground: nord11 }],
-  ["diff-nonexistent", { foreground: nord11 }],
-  ["diff-refine-added", { foreground: nord14 }],
-  ["diff-refine-changed", { foreground: nord13 }],
-  ["diff-refine-removed", { foreground: nord11 }],
-  ["diff-removed", { foreground: nord11 }],
-  ["border", { foreground: nord4 }],
-  ["buffer-menu-buffer", { foreground: nord4, weight: "bold" }],
-  ["button", { background: nord0, foreground: nord8, box: pressed }],
-  ["completions-annotations", { foreground: nord9 }],
-  ["completions-common-part", { foreground: nord8, weight: "bold" }],
-  ["completions-first-difference", { foreground: nord11 }],
-  ["cursor", { background: nord4 }],
-  ["fringe", { foreground: nord4, background: nord0 }],
-  ["file-name-shadow", { inherit: "shadow" }],
-  ["header-line", { foreground: nord4, background: nord2 }],
-  ["help-argument-name", { foreground: nord8 }],
-  ["highlight", { foreground: nord8, background: nord2 }],
-  ["hl-line", { background: nord1 }],
-  ["isearch", { foreground: nord0, background: nord8 }],
-  ["isearch-fail", { foreground: nord11 }],
-  ["link", { underline: true }],
-  ["link-visited", { underline: true }],
-  ["line-number", { foreground: nord3, background: nord0 }],
-  ["line-number-current-line", { foreground: nord4, background: nord0 }],
-  ["match", { inherit: "isearch" }],
-  ["minibuffer-prompt", { foreground: nord8, weight: "bold" }],
-  ["mode-line", { foreground: nord8, background: nord3 }],
-  ["mode-line-buffer-id", { weight: "bold" }],
-  ["mode-line-highlight", { inherit: "highlight" }],
-  ["mode-line-inactive", { foreground: nord4, background: inactiveModeLine }],
-  ["next-error", { inherit: "error" }],
-  ["nobreak-space", { foreground: nord3 }],
-  ...[1, 2, 3, 4, 5, 6, 7, 8].map((n): [string, e8.FaceAttributes] => [`outline-${n}`, n === 1 ? { foreground: nord8, weight: "bold" } : { inherit: "outline-1" }]),
-  ["query-replace", { foreground: nord8, background: nord2 }],
-  ["region", { ...(regionForeground ? { foreground: regionForeground } : {}), background: regionBackground }],
-  ["secondary-selection", { background: nord2 }],
-  ["show-paren-match", { foreground: nord0, background: nord8 }],
-  ["show-paren-mismatch", { background: nord11 }],
-  ["success", { foreground: nord14 }],
-  ["tooltip", { foreground: nord0, background: nord4 }],
-  ["trailing-whitespace", { foreground: nord3 }],
-  ["vertical-border", { foreground: nord2 }],
-  ...[
-    "whitespace-big-indent",
-    "whitespace-empty",
-    "whitespace-hspace",
-    "whitespace-indentation",
-    "whitespace-newline",
-    "whitespace-space",
-    "whitespace-space-after-tab",
-    "whitespace-space-before-tab",
-    "whitespace-tab",
-  ].map((face): [string, e8.FaceAttributes] => [face, { foreground: nord3, background: nord0 }]),
-  ["whitespace-line", { background: nord0 }],
-  ["whitespace-trailing", { inherit: "trailing-whitespace" }],
-  ["window-divider", { background: nord3 }],
-  // The checkers' underlines, which eglot's flymake faces follow too.
-  ["flymake-error", { underline: wave(nord11) }],
-  ["flymake-warning", { underline: wave(nord13) }],
-  ["flymake-note", { underline: wave(nord8) }],
-  // Org.
-  ["org-level-1", { foreground: nord7, weight: "extra-bold" }],
-  ["org-level-2", { foreground: nord8, weight: "bold" }],
-  ["org-level-3", { foreground: nord9, weight: "semi-bold" }],
-  ["org-level-4", { foreground: nord10, weight: "normal" }],
-  ...[5, 6, 7, 8].map((n): [string, e8.FaceAttributes] => [`org-level-${n}`, { inherit: "org-level-4" }]),
-  ["org-agenda-structure", { foreground: nord9 }],
-  ["org-agenda-date", { foreground: nord8, underline: false }],
-  ["org-agenda-done", { foreground: nord14 }],
-  ["org-agenda-dimmed-todo-face", { background: nord13 }],
-  ["org-block", { foreground: nord4 }],
-  ["org-block-begin-line", { foreground: nord7 }],
-  ["org-block-end-line", { foreground: nord7 }],
-  ["org-checkbox", { foreground: nord9 }],
-  ["org-checkbox-statistics-done", { foreground: nord14 }],
-  ["org-checkbox-statistics-todo", { foreground: nord13 }],
-  ["org-code", { foreground: nord7 }],
-  ["org-column", { background: nord2 }],
-  ["org-column-title", { inherit: "org-column", weight: "bold", underline: true }],
-  ["org-date", { foreground: nord8 }],
-  ["org-document-info", { foreground: nord4 }],
-  ["org-document-info-keyword", { foreground: nord3, weight: "bold" }],
-  ["org-document-title", { foreground: nord8, weight: "bold" }],
-  ["org-done", { foreground: nord14, weight: "bold" }],
-  ["org-ellipsis", { foreground: nord3 }],
-  ["org-footnote", { foreground: nord8 }],
-  ["org-formula", { foreground: nord9 }],
-  ["org-hide", { foreground: nord0, background: nord0 }],
-  ["org-link", { underline: true }],
-  ["org-scheduled", { foreground: nord14 }],
-  ["org-scheduled-previously", { foreground: nord13 }],
-  ["org-scheduled-today", { foreground: nord8 }],
-  ["org-sexp-date", { foreground: nord7 }],
-  ["org-special-keyword", { foreground: nord9 }],
-  ["org-table", { foreground: nord9 }],
-  ["org-todo", { foreground: nord13, weight: "bold" }],
-  ["org-upcoming-deadline", { foreground: nord12 }],
-  ["org-warning", { foreground: nord13, weight: "bold" }],
-  // Packages nord styles that E8 may get: markdown.
-  ...[1, 2, 3, 4, 5, 6].map((n): [string, e8.FaceAttributes] => [`markdown-header-face-${n}`, { foreground: nord8 }]),
-  ["markdown-blockquote-face", { foreground: nordComment }],
-  ["markdown-inline-code-face", { foreground: nord7 }],
-  ["markdown-link-face", { foreground: nord8 }],
-  ["markdown-url-face", { foreground: nord4, underline: true }],
-]);
+const nordRegion = e8.variable("nord-region-highlight");
+if (nordRegion === "frost" || nordRegion === "snowstorm") {
+  customThemeSetFaces("nord", [["region", { foreground: "#2E3440", background: nordRegion === "frost" ? "#88C0D0" : "#D8DEE9" }]]);
+}
+if (e8.variable("nord-uniform-mode-lines") === true) {
+  customThemeSetFaces("nord", [["mode-line-inactive", { foreground: "#D8DEE9", background: "#4C566A" }]]);
+}
 
 provideTheme("nord");

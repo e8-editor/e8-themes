@@ -109,8 +109,8 @@ collection e8-themes-select files its themes under.")
      :members ((dracula dracula)))
     ;; Emacs's own, each a theme by itself.
     (emacs :dirs ("emacs/etc/themes") :singles t :members ((emacs :all "emacs/etc/themes")))
-    ;; Nord is a port by hand, with its options: only its source and index entry are written.
-    (nord :dirs ("nord") :hand t :members ((nord nord))))
+    ;; Nord's options, set when it is loaded, are tools/nord-options.ts, after its faces.
+    (nord :dirs ("nord") :append "tools/nord-options.ts" :members ((nord nord))))
   "The themes ported, by family. A family's :members are lists of an
 upstream and its themes, or :all and the directory of an upstream whose
 every theme is taken but the repeats. A family of more than one theme
@@ -338,7 +338,19 @@ Emacs knows only some of them, without spaces."
                 ((or :underline :overline :strike-through) (e8-port-decoration v))
                 (:box (e8-port-box v))
                 ((or :inverse-video :extend) (cond ((eq v 'unspecified) 'skip) (v t) (t :false)))
-                (:height (if (numberp v) v 'skip))
+                ;; A float is a factor of the height below and a whole number
+                ;; an absolute height in tenths of a point; TypeScript has one
+                ;; kind of number, and E8 reads a whole one as absolute. A
+                ;; factor of 1.0 changes nothing, so it is left out, where
+                ;; written as 1 it would draw the text at a tenth of a point,
+                ;; and another whole factor is { factor: N }.
+                (:height (cond ((and (floatp v) (= v 1.0)) 'skip)
+                               ;; A whole factor, as calfw's titles' 2.0, which E8 would
+                               ;; read as absolute written as a number.
+                               ((and (floatp v) (= v (ftruncate v)))
+                                (cons 'object (list (cons "factor" (truncate v)))))
+                               ((numberp v) v)
+                               (t 'skip)))
                 (:family (if (stringp v) v 'skip))
                 (:inherit (cond ((or (null v) (eq v 'unspecified)) 'skip)
                                 ((consp v) (cons 'array (mapcar #'symbol-name (cl-remove-if-not #'symbolp v))))
@@ -544,9 +556,14 @@ colours, and returns all its faces."
 ;;;; Naming colours by the palette
 
 (defun e8-port-camel (name)
-  (let* ((parts (split-string name "[-_ +]+" t))
-         (s (concat (car parts) (mapconcat #'capitalize (cdr parts) ""))))
-    s))
+  "NAME as a JavaScript identifier in camel case. A sign before a digit is
+kept as a word, as Zenburn's bg-1 and bg+1 are two colours: bgMinus1 and
+bgPlus1."
+  (let* ((name (replace-regexp-in-string "\\`-" "minus-" name))
+         (name (replace-regexp-in-string "-\\([0-9]\\)" "-minus-\\1" name))
+         (name (replace-regexp-in-string "\\+\\([0-9]\\)" "-plus-\\1" name))
+         (parts (split-string name "[-_ +]+" t)))
+    (concat (car parts) (mapconcat #'capitalize (cdr parts) ""))))
 
 (defun e8-port-identifier-p (s)
   (string-match-p "\\`[a-zA-Z_$][a-zA-Z0-9_$]*\\'" s))
@@ -587,9 +604,16 @@ colours, and returns all its faces."
   theme upstream faces palette by-name by-hex keys summary source)
 
 (defun e8-port-index-palette (m)
-  "Fills in member M's lookups: palette name to colour, and colour to names."
+  "Fills in member M's lookups: palette name to colour, and colour to names.
+Two names that would be one identifier are an error, not a colour lost."
   (let ((by-name (make-hash-table :test #'equal))
-        (by-hex (make-hash-table :test #'equal)))
+        (by-hex (make-hash-table :test #'equal))
+        (keys (make-hash-table :test #'equal)))
+    (dolist (e (e8-port-member-palette m))
+      (let ((other (gethash (e8-port-camel (car e)) keys)))
+        (when (and other (not (equal other (car e))))
+          (error "%s's palette names %s and %s are both %s" (e8-port-member-theme m) other (car e) (e8-port-camel (car e))))
+        (puthash (e8-port-camel (car e)) (car e) keys)))
     (dolist (e (e8-port-member-palette m))
       (let ((hex (e8-port-hex (cdr e))))
         (when (and hex (not (gethash (car e) by-name)))
@@ -783,7 +807,7 @@ MODULE-OF upstream: its licence, where it comes from, and its copyright."
      (if (or faces omit) (concat ", [\n" (e8-port-ts-faces faces "  ") (if faces "\n" "") "]") "")
      (if omit (concat ", " (concat "[" (mapconcat #'json-encode-string omit ", ") "]")) ""))))
 
-(defun e8-port-write-single (m shared)
+(defun e8-port-write-single (m shared &optional append)
   (let* ((theme (e8-port-member-theme m))
          (source (e8-port-member-source m))
          (keys (e8-port-ordered-keys m)))
@@ -800,6 +824,7 @@ MODULE-OF upstream: its licence, where it comes from, and its copyright."
       (format "customThemeSetFaces(%S, [\n" (symbol-name theme))
       (e8-port-ts-faces shared "  ")
       "\n]);\n\n"
+      (if append (concat (with-temp-buffer (insert-file-contents append) (buffer-string)) "\n") "")
       (format "provideTheme(%S);\n" (symbol-name theme))))))
 
 (defun e8-port-write-family (family members shared own)
@@ -944,7 +969,7 @@ MODULE-OF upstream: its licence, where it comes from, and its copyright."
      ((or (plist-get family :hand) (null members)) nil)
      ((or (plist-get family :singles) (and (= (length members) 1) (not (plist-get family :module))))
       (dolist (m members)
-        (e8-port-write-single m (car (e8-port-name-colours (list m))))))
+        (e8-port-write-single m (car (e8-port-name-colours (list m))) (plist-get family :append))))
      (t (pcase-let ((`(,shared . ,own) (e8-port-name-colours members)))
           (e8-port-write-family family members shared own))))))
 
