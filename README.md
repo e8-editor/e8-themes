@@ -1,3 +1,10 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/e8-editor/e8/main/docs/assets/banner-ports-dark.png">
+  <img alt="E8 package ports" src="https://raw.githubusercontent.com/e8-editor/e8/main/docs/assets/banner-ports-light.png">
+</picture>
+
+Part of the [E8 package ports](https://github.com/e8-editor/e8#packages): Emacs packages ported to [E8](https://github.com/e8-editor/e8) and maintained with it. This is a collection of ports of Emacs themes, each credited to its authors in the table below, in [THEMES.md](THEMES.md) and in the theme's own file. The design and the original code are theirs; each port keeps its upstream's licence, MIT or the GNU General Public License version 3 or later.
+
 # e8-themes
 
 168 themes for [E8](https://github.com/e8-editor/e8), ported from the Emacs themes people use most, and `e8-themes-select`, which shows each one as you move through them.
@@ -61,7 +68,7 @@ THEMES.md lists each one left out, with its reason.
 
 ## Credit
 
-Each theme is a port to E8 of its upstream, under the upstream's licence, with its authors' copyright in its file. The ports are not the upstream authors' work as published, and they do not endorse them: report problems with a port here, not upstream. The authors of each theme are named in THEMES.md and in the theme's file.
+Each theme's file carries its upstream authors' copyright and names its licence and the version it was ported from. The ports are not the upstream authors' work as published, and they do not endorse them: report problems with a port here, not upstream.
 
 `e8-themes.ts`, the chooser, and the tools in `tools/` are E8's own.
 
