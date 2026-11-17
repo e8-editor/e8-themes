@@ -1,0 +1,62 @@
+e8-themes NEWS -- history of user-visible changes.
+
+This is the news of e8-themes, Emacs's most used themes ported to E8.
+'C-h P' shows it under the package's description.
+
+
+* Changes in e8-themes 0.2.1
+
+** Leuven's text is no longer drawn too small to read.
+
+** Zenburn and doom-manegarm keep all their colours.
+Two of their palette's names had become one, and one colour replaced
+the other.
+
+** Nord colours 26 more faces, 'org-verbatim' among them.
+
+** 'e8-themes-select' stays readable under every theme.
+Its own text no longer uses the 'shadow' face, and its lines neither
+wrap nor fold.
+
+
+* Changes in e8-themes 0.2.0
+
+** The collection grows from 20 themes to 168.
+The Modus themes come from modus-themes 5.3.0, and the 40 Ef themes,
+63 of Doom's, 25 from solarized-emacs, 14 of GNU Emacs 31.1's own, and
+more of Gruvbox, Tomorrow and Catppuccin are new.
+
+** Each Catppuccin flavour is a theme, 'catppuccin-latte' and the rest.
+'catppuccin' still follows 'catppuccin-flavor'.
+
+** '/' in 'e8-themes-select' narrows the list as you type.
+Words match the start of a word in a theme's name, collection,
+description or authors, and "dark" and "light" match the background.
+
+** 'e8-themes-select' shows each theme's authors, source and contrast.
+
+** 'e8-themes-select' opens at once, loading no theme until it shows.
+
+** THEMES.md credits every theme, and says which were left out and why.
+
+
+* Changes in e8-themes 0.1.0
+
+This is the first release: twenty themes, and a chooser.
+
+** 'M-x e8-themes-select' shows each theme as you move through them.
+Beside the list is a sample of code, Org and a diff in the theme.
+
+** 'n' and 'p' move, 'RET' keeps the theme, and 'q' goes back.
+
+** 'TAB' shows only the dark themes, then only the light, then all.
+
+** The Modus themes, Leuven and Wombat are there as Emacs ships them.
+
+** Gruvbox, Solarized, Tomorrow, Catppuccin, Zenburn and Dracula too.
+
+** Doom One, Doom One Light and Doom Tokyo Night are ported.
+
+** Nord comes from e8-nord-theme, with its options.
+
+** 'M-x catppuccin-load-flavor' changes Catppuccin's flavour.
